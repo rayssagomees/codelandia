@@ -8,42 +8,59 @@
     <link rel="stylesheet" href="arquivos/css/estilo.css">
     <link rel="shortcut icon" href="arquivos/midia/favicon.ico" type="image/x-icon">
 
-    <title>Blog</title>
+    <title>One Page</title>
 </head>
 <body>
-    <header>
-        <div class="div-flex-space">
-            <h1>Codelândia</h1>
-            <a href="#">Blog</a>
-        </div>
-        <div class="div-flex-center">
-            <input type="search" name="search" id="search" placeholder="Pesquisar no blog">
-        </div>
-    </header>
     <main>
-        <article>
-            <p class="article-data">02 de jul, 2021</p>
-            <h2>Agora é oficial: o Windows 11 está vindo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
-        </article>
-
-        <article>
-            <p class="article-data">02 de jul, 2021</p>
-            <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
-        </article>
-
-        <article>
-            <p class="article-data">02 de jul, 2021</p>
-            <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
-        </article>
-
-        <article>
-            <p class="article-data">02 de jul, 2021</p>
-            <h2>John McAfee, criador do antivírus McAfee, morre</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
-        </article>
+        <section class="fundo-colorido">
+            <h1>
+                Lorem ipsum dolor<span class="quebralinha"></span>sit amet
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur<span class="quebralinha"></span> adipiscing elit. Maecenas eu massa sit amet <span class="quebralinha"></span>augue consectetur ullamcorper non ac massa.</p>
+            <button>Botão</button>
+        </section>
+        <section class="fundo-claro">
+            <article>
+                <div id="articleFundo01"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo02"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo03"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo04"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo05"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo06"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+        </section>
+        <section class="fundo-colorido">
+            <form action="">
+                <h2>Entre em contato</h2>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="tel" name="tel" id="tel" placeholder="Telefone">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="8" placeholder="Mensagem..."></textarea>
+                <input type="submit" value="Enviar mensagem">
+            </form>
+        </section>
     </main>
     <a target="_blank" href="https://raysantori.com/">
         <footer id="copy">
