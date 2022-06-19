@@ -1,61 +1,121 @@
-header{
-    background-image: linear-gradient(45deg, var(--corPrimaria), var(--corSecundaria));
-    padding: 2rem;
+@media only screen and (max-width:720px){
+    .quebraLinha{
+        display: none;
+    }
+
+    .lista-produtos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "t01 t02"
+        "t03 t04" 
+        "t05 t06"
+        "t07 t08";
+    }
+
+    .lista-produtos img{
+        min-width: 35vw;
+    }
+
+    #tenis01,#tenis02,#tenis03,#tenis04,#tenis05,#tenis06,#tenis07,#tenis08{
+        min-width: 40vw; min-height: 40vh;
+    }
 }
 
-header a{
-    text-transform: lowercase;
+.quebraLinha{
+    display: block;
+    min-height: 1px;
 }
 
-.div-flex-space{
+.fundo-imagem{
+    min-height: 60vh;
+    background-color: var(--preto);
+    background-image: url('../midia/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blur-imagem{
+    min-height: 60vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: rgba(24, 24, 24, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 8%;
 }
 
-.div-flex-center{
-    padding-top: 2%;
+.blur-imagem > h2,.blur-imagem > p{
+    color: var(--branco);
 }
 
-.div-flex-center,main{
+.blur-imagem > p{
+    font-weight: 600;
+}
+
+.lista-produtos{
+    width: 90vw; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "t01 t02 t03 t04" 
+    "t05 t06 t07 t08";
+    gap: 10% 2%;
+    padding: 4%;
+    margin:auto auto 8% auto;
+}
+
+.lista-produtos img{
+    width: 35vw;
+}
+
+#tenis01,#tenis02,#tenis03,#tenis04,#tenis05,#tenis06,#tenis07,#tenis08{
+    width: 40vw; height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 1%;
+    background-color: var(--branco200);
+    border-radius: var(--borderRadius);
 }
 
-article{
-    width: 53vw;
-    background-color: var(--branco);
-    padding: 3rem;
-    margin: 1%;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+#tenis01{
+    grid-area: t01;
 }
 
-.article-data{
-    color: var(--cinza);
-    font-family: var(--fonteDestaque);
-    font-size: 1rem;
-    font-weight: 400;
+#tenis02{
+    grid-area: t02;
 }
 
-@media only screen and (max-width:770px){
-    input[type=search],article{
-        width: 95vw;
-    }
-
-    article{
-        margin: 2%;
-    }
-
-    .div-flex-space{
-        justify-content: space-between;
-    }
+#tenis03{
+    grid-area: t03;
 }
 
-footer{
-    background-image: linear-gradient(45deg, var(--corPrimaria), var(--corSecundaria));
+#tenis04{
+    grid-area: t04;
+}
+
+#tenis05{
+    grid-area: t05;
+}
+
+#tenis06{
+    grid-area: t06;
+}
+
+#tenis07{
+    grid-area: t07;
+}
+
+#tenis08{
+    grid-area: t08;
+}
+
+.cupom,footer{
+    background-color: var(--preto);
+    color: var(--branco);
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;

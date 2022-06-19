@@ -1,22 +1,19 @@
 /*referência*/
 /*tipografia*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*id visual*/
 :root{
     /*paleta de cores*/
-    --corPrimaria:#574ae8;
-    --corSecundaria:#3ea1db;
-
-    --branco:#fff;
-    --branco200:#f9f9f9;
-    --cinza:#717171;
-    --cinzaEscuro:#1a202c;
+    --branco:#f9f9f9;
+    --branco200:#EBE9EA;
+    --cinza:#474747;
+    --preto:#181818;
 
     /*tipografia*/
-    --fonteDestaque: 'Lexend Deca', sans-serif;
-    --fonteTexto: 'Inter', sans-serif;
+    --fonteTexto: 'Montserrat', sans-serif;
+
+    --tamanhoFonte:16px;
 
     --borderRadius:4px;
 }
@@ -33,15 +30,16 @@ html{
 }
 
 body{
-    background-color: var(--branco200);
+    background-color: var(--branco);
+    color: var(--preto);
     font-family: var(--fonteTexto);
-    font-size: 16px;
+    font-size: var(--tamanhoFonte);
 }
 
 /*seletor de texto*/
 ::selection{
-    background-color: var(--corPrimaria);
-    color: var(--darkEscuro);
+    background-color: var(--cinza);
+    color: var(--branco);
 }
 
 /*barra de rolagem*/
@@ -50,7 +48,7 @@ body{
 }
 
 ::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
-    border-radius: 8px;
+    border-radius: var(--borderRadius);
 }
 
 ::-webkit-scrollbar-track{
@@ -58,23 +56,30 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--corSecundaria);
+    background-color: var(--preto);
 }
 
 /*títulos*/
+h1,h3{
+    text-align: center;
+}
+
 h1{
-    color: var(--branco);
-    font-family: var(--fonteDestaque);
     font-size: 1.5rem;
-    font-weight: 400;
-    padding: 0.5rem 0;
+    font-weight: 600;
+    padding: 1.5rem 0;
 }
 
 h2{
-    color: var(--cinzaEscuro);
-    font-family: var(--fonteDestaque);
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem;
 }
 
 /*marca-texto*/
@@ -87,34 +92,12 @@ a:hover{
 }
 
 p{
-    color: var(--cinza);
-    font-family: var(--fonteDestaque);
     font-size: 1.25rem;
-    font-weight: 400;
-    padding: 0.5rem 0;
+    font-weight: 500;
+    padding: 1.25rem 0;
+    line-height: 2rem;
 }
 
 /*botões*/
 
 /*inputs*/
-input[type=search]{
-    width: 53vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--branco200);
-    font-family: var(--fonteTexto);
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding: 1.25rem;
-    border: none;
-    border-radius: var(--borderRadius);
-}
-
-input[type=search]::placeholder{
-    color: rgba(255, 255, 255, 0.5);
-    font-family: var(--fonteTexto);
-    font-size: 1.25rem;
-    font-weight: 500;
-}

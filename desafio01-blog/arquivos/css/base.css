@@ -50,7 +50,7 @@ body{
 }
 
 ::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
-    border-radius: 8px;
+    border-radius: var(--borderRadius);
 }
 
 ::-webkit-scrollbar-track{
