@@ -1,0 +1,120 @@
+/*referência*/
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*id visual*/
+:root{
+    /*paleta de cores*/
+    --corPrimaria:#574ae8;
+    --corSecundaria:#3ea1db;
+
+    --branco:#fff;
+    --branco200:#f9f9f9;
+    --cinza:#717171;
+    --cinzaEscuro:#1a202c;
+
+    /*tipografia*/
+    --fonteDestaque: 'Lexend Deca', sans-serif;
+    --fonteTexto: 'Inter', sans-serif;
+
+    --borderRadius:4px;
+}
+
+/*redefinir*/
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--branco200);
+    font-family: var(--fonteTexto);
+    font-size: 16px;
+}
+
+/*seletor de texto*/
+::selection{
+    background-color: var(--corPrimaria);
+    color: var(--darkEscuro);
+}
+
+/*barra de rolagem*/
+::-webkit-scrollbar{
+    width: 8px; height: 8px;
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--corSecundaria);
+}
+
+/*títulos*/
+h1{
+    color: var(--branco);
+    font-family: var(--fonteDestaque);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+h2{
+    color: var(--cinzaEscuro);
+    font-family: var(--fonteDestaque);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/*marca-texto*/
+a{
+    color: var(--branco);
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+p{
+    color: var(--cinza);
+    font-family: var(--fonteDestaque);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+/*botões*/
+
+/*inputs*/
+input[type=search]{
+    width: 53vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--branco200);
+    font-family: var(--fonteTexto);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.25rem;
+    border: none;
+    border-radius: var(--borderRadius);
+}
+
+input[type=search]::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--fonteTexto);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
