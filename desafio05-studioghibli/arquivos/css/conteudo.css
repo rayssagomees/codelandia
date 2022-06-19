@@ -1,0 +1,79 @@
+@media only screen and (max-width:1050px){
+    header{
+        background-color: var(--corPrimaria);
+    }
+
+    main{
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-area: 
+        "lDir"
+        "lEsq";
+    }
+
+    .lateralEsquerda{
+        display: none;
+        grid-area: lEsq;
+    }
+}
+
+header{
+    position: fixed;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 2rem 8%;
+}
+
+header ul{
+    list-style: none;
+    opacity: 0.75;
+}
+
+header ul li{
+    display: inline;
+    padding: 1rem;
+}
+
+main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "lDir lEsq";
+    background-image: linear-gradient(120deg, var(--corPrimaria),var(--corSecundaria));
+    padding: 0 8%;
+}
+
+main > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lateralDireita{
+    grid-area: lDir;
+}
+
+.lateralEsquerda{
+    grid-area: lEsq;
+}
+
+main h3{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: var(--branco);
+    color: var(--corPrimaria);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
