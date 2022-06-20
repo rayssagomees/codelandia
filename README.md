@@ -36,4 +36,4 @@
   <tr>
     <td><a target="_blank" href="https://github.com/raysantori">raysantori</a>
   </tr>
-</tabel>
+</table>
