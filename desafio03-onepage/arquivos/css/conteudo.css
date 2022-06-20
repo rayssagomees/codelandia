@@ -6,6 +6,27 @@ section{
     padding: 6% 12%;
 }
 
+@media only screen and (max-width:1050px){
+    #fundo-colorido{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+#fundo-colorido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ladoEsquerdo,.ladoDireito{
+    margin: 0 5%;
+}
+
+.ladoEsquerdo img{
+    width: 100%;
+}
+
 @media only screen and (max-width:900px){
     .quebralinha{
         display: none;
@@ -19,31 +40,30 @@ section{
 
 @media only screen and (max-width:900px){
     .fundo-claro{
-        min-width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 8% 4%;
-        padding: 4%;
-        margin: 4% auto 8% auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    article{
+        margin: 4% !important;
     }
 }
 
 .fundo-claro{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 8% 4%;
+    min-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--branco200);
-    padding: 4%;
-    margin: 4% auto 8% auto;
+    padding: 0 2%;
+    margin: 4% auto;
 }
 
 article{
     background-color: var(--branco);
     box-shadow: 4px 4px 8px rgba(42, 42, 42, 0.25);
     border-radius: var(--borderRadius);
+    margin: 1% 4%;
 }
 
 article p{
