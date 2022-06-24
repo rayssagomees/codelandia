@@ -62,7 +62,7 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: transparent;
+    background-color: var(--preto);
 }
 
 ::-webkit-scrollbar-thumb{
