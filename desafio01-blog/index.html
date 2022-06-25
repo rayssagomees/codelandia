@@ -13,11 +13,17 @@
 <body>
     <header>
         <div class="div-flex-space">
-            <h1>Codelândia</h1>
-            <a href="#">Blog</a>
+            <h1>Blog</h1>
+
+            <label for="switch" id="iconeTema">
+                <input type="checkbox" name="switch" id="switch"><i class="fi fi-rr-sun"></i>
+            </label>
         </div>
         <div class="div-flex-center">
-            <input type="search" name="search" id="search" placeholder="Pesquisar no blog">
+            <div class="blocoIcone">
+                <i class="fi fi-rr-search"></i>
+                <input type="search" name="search" id="search" placeholder="Pesquisar no blog" onkeyup="pesquisar">
+            </div>
         </div>
     </header>
     <main>
@@ -55,5 +61,7 @@
             </script>
         </footer>
     </a>
+
+    <script src="arquivos/js/index.js"></script>
 </body>
 </html>

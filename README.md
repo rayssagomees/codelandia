@@ -44,9 +44,8 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
 
 1. <code>💻 Desafio 01</code>  Blog (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio01-blog/index.html">ver demo</a>)<br>
    - [x] Design responsivo;
-   - [ ] Tema claro ou escuro;
+   - [x] Tema claro ou escuro;
    - [ ] Animação de gradiente;
-   - [ ] Manipular ícone de pesquisa no input:search;
    - [ ] Criar um mecanismo de busca;
    - [ ] Exibir em grade ou linha;
    - [ ] Botão de salvamento funcional;

@@ -1,4 +1,7 @@
 /*referência*/
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
 /*tipografia*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -9,16 +12,28 @@
     --corPrimaria:#574ae8;
     --corSecundaria:#3ea1db;
 
-    --branco:#fff;
-    --branco200:#f9f9f9;
-    --cinza:#717171;
-    --cinzaEscuro:#1a202c;
+    --corCaixa:#fff;
+    --corBg:#f9f9f9;
+    --corDestaque:#f9f9f9;
+    --corConteudo:#717171;
+    --corConteudoDestaque:#1a202c;
 
     /*tipografia*/
     --fonteDestaque: 'Lexend Deca', sans-serif;
     --fonteTexto: 'Inter', sans-serif;
 
     --borderRadius:4px;
+}
+
+.dark-mode:root{
+    --corPrimaria:#1b1b1b;
+    --corSecundaria:#1f1d1d;
+
+    --corCaixa:#2c2c2c;
+    --corBg:#1f1f1f;
+    --corDestaque:#cecdcd;
+    --corConteudo:#7c7b7b;
+    --corConteudoDestaque:#cecdcd;
 }
 
 /*redefinir*/
@@ -33,7 +48,7 @@ html{
 }
 
 body{
-    background-color: var(--branco200);
+    background-color: var(--corBg);
     font-family: var(--fonteTexto);
     font-size: 16px;
 }
@@ -41,7 +56,7 @@ body{
 /*seletor de texto*/
 ::selection{
     background-color: var(--corPrimaria);
-    color: var(--darkEscuro);
+    color: var(--corConteudoDestaque);
 }
 
 /*barra de rolagem*/
@@ -63,7 +78,7 @@ body{
 
 /*títulos*/
 h1{
-    color: var(--branco);
+    color: var(--corDestaque);
     font-family: var(--fonteDestaque);
     font-size: 1.5rem;
     font-weight: 400;
@@ -71,7 +86,7 @@ h1{
 }
 
 h2{
-    color: var(--cinzaEscuro);
+    color: var(--corConteudoDestaque);
     font-family: var(--fonteDestaque);
     font-size: 2rem;
     font-weight: 400;
@@ -79,7 +94,7 @@ h2{
 
 /*marca-texto*/
 a{
-    color: var(--branco);
+    color: var(--corDestaque);
 }
 
 a:hover{
@@ -87,7 +102,7 @@ a:hover{
 }
 
 p{
-    color: var(--cinza);
+    color: var(--corConteudo);
     font-family: var(--fonteDestaque);
     font-size: 1.25rem;
     font-weight: 400;
@@ -98,18 +113,14 @@ p{
 
 /*inputs*/
 input[type=search]{
-    width: 53vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--branco200);
+    width: 100%;
+    background-color: transparent;
+    color: var(--corBg);
     font-family: var(--fonteTexto);
     font-size: 1.25rem;
     font-weight: 500;
     padding: 1.25rem;
     border: none;
-    border-radius: var(--borderRadius);
 }
 
 input[type=search]::placeholder{
