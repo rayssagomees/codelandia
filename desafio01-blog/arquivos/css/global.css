@@ -1,0 +1,145 @@
+@import url(style.css);
+
+/*referência*/
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*redefinir*/
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*id visual*/
+:root{
+    /*paleta de cores*/
+    --cor-primaria:#574ae8;
+    --cor-secundaria:#3ea1db;
+
+    --cor-sobreposta:#fff;
+    --cor-fundo:#f9f9f9;
+    --cor-conteudo-destaque:#1a202c;
+    --cor-destaque:#f9f9f9;
+    --cor-conteudo:#717171;
+
+    /*tipografia*/
+    --fonte-destaque: 'Lexend Deca', sans-serif;
+    --fonte-conteudo: 'Inter', sans-serif;
+}
+
+.dark-mode:root{
+    --cor-primaria:#1b1b1b;
+    --cor-secundaria:#1f1d1d;
+
+    --cor-sobreposta:#2c2c2c;
+    --cor-fundo:#1f1f1f;
+    --cor-conteudo-destaque:#cecdcd;
+    --cor-destaque:#7c7b7b;
+    --cor-conteudo:#cecdcd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+}
+
+/*seletor de texto*/
+::selection{
+    background-color: var(--cor-primaria);
+    color: var(--corConteudoDestaque);
+}
+
+/*barra de rolagem*/
+::-webkit-scrollbar{
+    width: 8px; height: 8px;
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-secundaria);
+}
+
+/*títulos*/
+h1{
+    color: var(--cor-destaque);
+    font-family: var(--fonte-destaque);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+h2{
+    color: var(--cor-conteudo-destaque);
+    font-family: var(--fonte-destaque);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/*marca-texto*/
+a{
+    color: var(--cor-destaque);
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+p{
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-destaque);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+/*inputs*/
+input{
+    width: 100%;
+    background-color: transparent;
+    color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.25rem;
+    border: none;
+}
+
+input[type=checkbox]{
+    visibility: hidden;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--fonte-conteudo);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/*rodapé**********/
+footer{
+    color: var(--cor-conteudo);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#copyright{
+    text-align: center;
+    text-transform: uppercase;
+}
