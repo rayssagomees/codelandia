@@ -119,6 +119,7 @@ input{
     font-weight: 500;
     padding: 1.25rem;
     border: none;
+    outline: none;
 }
 
 input[type=checkbox]{
