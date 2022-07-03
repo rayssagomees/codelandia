@@ -5,67 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="arquivos/css/estilo.css">
+    <link rel="stylesheet" href="arquivos/css/global.css">
     <link rel="shortcut icon" href="arquivos/midia/air-jordan-1-mid-dutch-green-1-400.png" type="image/x-icon">
 
     <title>JordanShoes</title>
 </head>
 <body>
     <main>
-        <div class="cupom">Ganhe R$ 10,00 de desconto no frete</div>
+        <div class="fundo-texto fundo">Ganhe R$ 10,00 de desconto no frete</div>
 
         <h1>JordanShoes</h1>
 
-        <div class="fundo-imagem">
-            <div class="blur-imagem">
+        <div class="fundo-image">
+            <div class="blur-image">
                 <h2>A melhor loja de Jordan</h2>
-                <p>O tênis Jordan é fruto de uma velha e forte<span class="quebraLinha"></span> parceria entre a Nike e o jogador Michael Jordan.</p>
+                <p>O tênis Jordan é fruto de uma velha e forte<span class="quebra-linha"></span> parceria entre a Nike e o jogador Michael Jordan.</p>
             </div>
         </div>
 
-        <section id="produtos">
+        <section id="produtos" class="flex-spaceevenly-center-column">
         <h3>Destaques</h3>
         <p style="text-align: center;">Frete grátis e chinelo de brinde é aqui. Aproveite por tempo limitado!</p>
-            <div class="lista-produtos">
-                <div id="tenis01">
+            <div class="lista-produtos flex-center-center-wrap">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-high-zoom-cmft-tropical-twist-1-400.png" alt="Modelo de tênis">
                 </div>
-                <div id="tenis02">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-mid-black-noble-red-w-1-1000.png" alt="Modelo de tênis">
                 </div>
-                <div id="tenis03">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-mid-bright-citrus-1-1000 1.png" alt="Modelo de tênis">
                 </div>
-                <div id="tenis04">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-mid-carbon-fiber-1-1000 1.png" alt="Modelo de tênis">
                 </div>
             </div>
-            <div class="lista-produtos">
-                <div id="tenis05">
+            <div class="lista-produtos flex-center-center-wrap">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-mid-dutch-green-1-400.png" alt="Modelo de tênis">
                 </div>
-                <div id="tenis06">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-mid-grey-camo-1-1000 1.png" alt="Modelo de tênis">
                 </div>
-                <div id="tenis07">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-mid-light-smoke-grey-gs-1-1000.png" alt="Modelo de tênis">
                 </div>
-                <div id="tenis08">
+                <div class="produtos flex-center-center">
                     <img src="arquivos/midia/air-jordan-1-retro-high-court-purple-w-1-400.png" alt="Modelo de tênis">
                 </div>
             </div>
         </section>
     </main>
-
     <a target="_blank" href="https://raysantori.com/">
-        <footer id="copy">
-            <script>
-                var copy = window.document.querySelector('#copy')
-                var agora = new Date()
-                var ano = agora.getFullYear()
-                copy.innerHTML = `&copy; ${ano} raysantori`
-            </script>
-        </footer>
+        <footer id="copyright"></footer>
     </a>
+
+    <script src="arquivos/js/index.js"></script>
 </body>
 </html>
