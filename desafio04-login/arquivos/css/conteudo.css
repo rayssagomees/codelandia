@@ -23,6 +23,12 @@ main a{
     }
 }
 
+.lateralEsquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lateralDireita{
     display: flex;
     justify-content: center;
