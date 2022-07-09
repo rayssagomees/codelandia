@@ -109,7 +109,6 @@ label,input,::placeholder{
 }
 
 button,input{
-    width: 100%;
     border-radius: 4px;
     margin: 0.75rem 0;
 }
@@ -129,12 +128,20 @@ label{
     padding-top: 4%;
 }
 
+p label{
+    padding: 0 .5rem;
+}
+
 button,.btn-primaria{
     background-color: var(--cor-primaria);
     color: var(--cor-sobreposta);
     font-weight: 700;
     padding: 1.5rem 3rem;
     border: none;
+}
+
+input.entrada,.btn-primaria{
+    width: 100%;
 }
 
 button:hover,.btn-primaria:hover{

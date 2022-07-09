@@ -42,7 +42,7 @@
 }
 
 .padding{
-    padding: 8%;
+    padding: 2% 8%;
 }
 
 
@@ -62,5 +62,9 @@
 
     .height{
         height:auto;
+    }
+
+    .padding{
+        padding: 8%;
     }
 }
