@@ -36,11 +36,9 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
    - [x] Incluir favicon;
    - [x] Design responsivo;
    - [x] Tema claro ou escuro;
-   - [ ] Animação de gradiente;
    - [ ] Criar um mecanismo de busca;
    - [ ] Exibir em grade ou linha;
-   - [ ] Botão ler mais;
-   - [ ] Captura de leads.
+   - [ ] Botão ler mais.
 
 2. <code>👟 Desafio 02</code>  JordanShoes (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio02-jordanshoes/index.html">ver demo</a>)<br>
    - [x] Incluir favicon;
