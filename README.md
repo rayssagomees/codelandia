@@ -33,7 +33,7 @@
 Funcionalidades que ainda precisam ser implementadas no desafio.
 
 1. <code>💻 Desafio 01</code>  Blog (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio01-blog/index.html">ver demo</a>)<br>
-   - [ ] Incluir favicon;
+   - [x] Incluir favicon;
    - [x] Design responsivo;
    - [x] Tema claro ou escuro;
    - [ ] Animação de gradiente;
@@ -57,7 +57,7 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
    - [x] Incluir favicon;
    - [x] Design responsivo;
    - [ ] Card:hover destacado;
-   - [ ] Validação de formulário
+   - [ ] Validação de formulário.
 
 4. <code>📲 Desafio 04</code>  Login (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio04-login/index.html">ver demo</a>)<br>
    - [ ] Incluir favicon;
