@@ -58,7 +58,7 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
    - [ ] Validação de formulário.
 
 4. <code>📲 Desafio 04</code>  Login (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio04-login/index.html">ver demo</a>)<br>
-   - [ ] Incluir favicon;
+   - [x] Incluir favicon;
    - [x] Design responsivo.
 
 5. <code>🎬 Desafio 05</code>  Studio Ghibli (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio05-studioghibli/index.html">ver demo</a>)<br>

@@ -5,39 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="arquivos/css/estilo.css">
+    <link rel="stylesheet" href="arquivos/css/global.css">
     <link rel="shortcut icon" href="arquivos/midia/about-us.svg" type="image/x-icon">
 
     <title>Login</title>
 </head>
 <body>
-    <main>
-        <aside class="lateralEsquerda">
+    <main class="height template">
+        <aside class="flex-center-center fundo">
             <img src="arquivos/midia/about-us.svg" alt="Sobre nós">
         </aside>
-        <aside class="lateralDireita">
-            <div class="flex-centro">
+        <aside class="flex-center-center-column">
+            <div class="flex-spacebetween-column width padding">
                 <h2>Bem vindo de volta!</h2>
                 <h1>Faça login na sua conta</h1>
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="codelandia@gmail.com">
+                <form action="" autocomplete="off">
+                    <label for="email">E-mail:</label>
+                    <input class="entrada" type="email" name="email" id="email" placeholder="">
+                    <label for="password">Senha:</label>
+                    <input class="entrada" type="password" name="password" id="password" placeholder="">
+                    <div class="flex-spacebetween-center-row">
+                        <p>
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox">Lembre de mim</label>
+                        </p>
+                        <span><a href="">Esqueceu sua senha?</a></span>
+                    </div>
+                    <input class="btn-primaria" type="submit" value="Entrar">
+                </form>
 
-                <label for="password">Senha:</label>
-                <input type="password" name="password" id="password" placeholder="*********">
-
-                <div class="espaco-entre">
-                    <p>
-                        <input type="checkbox" name="checkbox" id="checkbox" checked>
-                        <label for="checkbox">Lembre de mim</label>
-                    </p>
-                    <span><a href="">Esqueceu sua senha?</a></span>
-                </div>
-
-                <button>Entrar</button>
-
-                <p>ou</p>
-                <button class="btn-google"><i class="fi fi-brands-google"></i> Faça login com o Google</button>
+                <p class="flex-center-center">ou</p>
+                <button class="btn-secundario flex-center-center"><img src="arquivos/midia/icon-google.svg" alt="Logo Google"> Faça login com o Google</button>
             </div>
 
             <p>Não tem uma conta?&nbsp;<a href="">Cadastre-se.</a></p>

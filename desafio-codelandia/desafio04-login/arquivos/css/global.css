@@ -1,0 +1,176 @@
+@import url(style.css);
+
+/*referência*/
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*redefinir**********/
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*id visual**********/
+:root{
+    /*paleta de cores*/
+    --cor-primaria:#04C35C;
+    --cor-secundaria:#2B6CB0;
+
+    --cor-sobreposta:#fff;
+    --cor-fundo:#F7FAFC;
+    --cor-conteudo:#1A202C;
+
+    /*tipografia*/
+    --fonte-destaque: 'Merriweather', serif;
+    --fonte-conteudo: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-sobreposta);
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*seletor de texto*/
+::selection{
+    background-color: var(--cor-primaria);
+    color: var(--cor-sobreposta);
+}
+
+/*barra de rolagem*/
+::-webkit-scrollbar{
+    width: 8px; height: 8px;
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-primaria);
+}
+
+/*marca-texto**********/
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 2% 0;
+}
+
+.flex-spacebetween-column > p{
+    color: rgba(26, 32, 44, 0.75);
+}
+
+a{
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+/*títulos*/
+h1,h2{
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-destaque);
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 33px;
+    padding: 1rem 0;
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+/*botões**********/
+label,input,::placeholder{
+    font-weight: 400;
+}
+
+button,input{
+    width: 100%;
+    border-radius: 4px;
+    margin: 0.75rem 0;
+}
+
+button,input,::placeholder{
+    font-size: 1.25rem;
+    font-family: var(--fonte-conteudo);
+    outline: transparent;
+}
+
+input,::placeholder{
+    color: var(--cor-conteudo);
+}
+
+label{
+    font-size: 1rem;
+    padding-top: 4%;
+}
+
+button,.btn-primaria{
+    background-color: var(--cor-primaria);
+    color: var(--cor-sobreposta);
+    font-weight: 700;
+    padding: 1.5rem 3rem;
+    border: none;
+}
+
+button:hover,.btn-primaria:hover{
+    background-color: var(--cor-secundaria);
+    transition: all 1s;
+}
+
+.btn-secundario{
+    background-color: var(--cor-conteudo);
+}
+
+button img{
+    width: 12%;
+    padding: 0 1rem;
+}
+
+input{
+    background-color: var(--cor-sobreposta);
+    padding: 1.25rem;
+    border: 1px solid rgba(26, 32, 44, 0.1);
+}
+
+input.entrada:focus{
+    outline: 1px solid var(--cor-primaria);
+}
+
+input[type="checkbox"]{
+    accent-color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+/*rodapé**********/
+footer{
+    color: var(--cor-conteudo);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
