@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="shortcut icon" href="arquivos/midia/air-jordan-1-mid-dutch-green-1-400.png" type="image/x-icon">
+
+    <title>JordanShoes</title>
+
+    <style>
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*id visual*/
+:root{
+    --cor-primaria: #181818;
+    --cor-sobreposta:#f9f9f9;
+    --cor-fundo:#EBE9EA;
+    --cor-destaque:#181818;
+    --cor-conteudo:#474747;
+
+    --fonte-conteudo: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--cor-sobreposta) !important;
+    color: var(--cor-destaque) !important;
+}
+
+/*marca-texto*/
+:is(.blur-image) h2,p{
+    color: var(--cor-sobreposta);
+    font-weight: 600;
+}
+
+a{
+    color: var(--cor-sobreposta);
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.25rem 0;
+    line-height: 2rem;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+h2,h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.quebra-linha{
+    display: block;
+    min-height: 1px;
+}
+
+@media only screen and (max-width:720px){
+    .quebra-linha{
+        display: none;
+    }
+}
+
+.fundo{
+    background-color: var(--cor-destaque);}
+
+.fundo-texto{
+    color: var(--cor-sobreposta);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.fundo-image{
+    background-color: var(--cor-destaque);
+    background-image: url('../assets/media/d02-jordanshoes/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blur-image{
+    background: rgba(24, 24, 24, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 6% 14%;
+}
+
+@media only screen and (max-width:720px){
+    .blur-image{
+        padding: 6%;
+    }
+}
+
+section{
+    margin: 4%;
+}
+
+.lista-produtos{
+    display: flex;
+}
+
+@media only screen and (max-width:720px){
+    .flex-center-center-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.produtos{
+    height: 200px;
+    background-color: var(--cor-fundo);
+    border-radius: 4px;
+    padding: 4%;
+    margin: 2%;
+}
+
+@media only screen and (max-width:720px){
+    .produtos{
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+.produtos > img{
+    width: 100%;
+}
+
+.produtos > img:hover{
+    width: 125%;
+    transition: all .3s;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="fundo-texto fundo">Ganhe <strong>R$ 10,00</strong> de desconto no frete</div>
+
+        <h1>JordanShoes</h1>
+
+        <div class="fundo-image">
+            <div class="blur-image">
+                <h2>A melhor loja de Jordan</h2>
+                <p>O tênis Jordan é fruto de uma velha e forte<span class="quebra-linha"></span> parceria entre a Nike e o jogador Michael Jordan.</p>
+            </div>
+        </div>
+
+        <section id="produtos" class="flex-spaceevenly-center-column">
+        <h3>Destaques</h3>
+        <p style="text-align: center;color: var(--cor-destaque);">Frete grátis e chinelo de brinde é aqui. Aproveite por tempo limitado!</p>
+            <div class="lista-produtos flex-center-center-wrap">
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-high-zoom-cmft-tropical-twist-1-400.png" alt="Modelo de tênis">
+                </div>
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes//air-jordan-1-mid-black-noble-red-w-1-1000.png" alt="Modelo de tênis">
+                </div>
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-mid-bright-citrus-1-1000 1.png" alt="Modelo de tênis">
+                </div>
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-mid-carbon-fiber-1-1000 1.png" alt="Modelo de tênis">
+                </div>
+            </div>
+            <div class="lista-produtos flex-center-center-wrap">
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-mid-dutch-green-1-400.png" alt="Modelo de tênis">
+                </div>
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-mid-grey-camo-1-1000 1.png" alt="Modelo de tênis">
+                </div>
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-mid-light-smoke-grey-gs-1-1000.png" alt="Modelo de tênis">
+                </div>
+                <div class="produtos flex-center-center">
+                    <img src="../assets/media/d02-jordanshoes/air-jordan-1-retro-high-court-purple-w-1-400.png" alt="Modelo de tênis">
+                </div>
+            </div>
+        </section>
+    </main>
+    <a target="_blank" href="https://raysantori.com/">
+        <footer>
+            <div id="copyright"></div>
+        </footer>
+    </a>
+
+    <script src="../assets/script/index.js"></script>
+</body>
+</html>
