@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="shortcut icon" href="../assets/media/d03-onepage/imagem.svg" type="image/x-icon">
+
+    <title>One Page</title>
+
+    <style>
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*id visual*/
+:root{
+    --cor-primaria:#6C63FF;
+    --cor-secundaria:#D7D4FF;
+    --cor-sobreposta:#fff;
+    --cor-fundo:#f9f9f9;
+    --cor-destaque:#2A2A2A;
+    --cor-conteudo:#555555;
+
+    --fonte-destaque: 'Merriweather', serif;
+    --fonte-conteudo: 'Lato', sans-serif;
+}
+
+/*títulos*/
+h1,h2,h3{
+    color: var(--cor-destaque);
+    font-family: var(--fonte-destaque);
+}
+
+h1,h2{
+    font-weight: 400;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    padding: 2rem 0 4rem 0;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 1.75rem;
+    padding: 20% 15% 2% 15%;
+}
+
+/*marca-texto*/
+p{
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-conteudo);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 2% 0;
+}
+
+a{
+    color: var(--cor-fundo);
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+/*inputs*/
+button{
+    font-weight: 700;
+    padding: 1rem 3rem;
+}
+
+button,input,textarea{
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    padding: 1.25rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+button,input,textarea,::placeholder{
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-conteudo);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width:900px){
+    input,textarea{
+        min-width: 100%;
+    }
+}
+
+input[type=submit]{
+    background-color: var(--cor-primaria);
+    color: var(--cor-sobreposta);
+    box-shadow: 4px 4px 8px rgba(42, 42, 42, 0.25);
+}
+
+button:hover,input[type=submit]:hover{
+    background-color: var(--cor-conteudo);
+    transition: all 1s;
+}
+
+#copyright{
+    color: var(--cor-fundo);
+}
+
+.padding{
+    padding: 6% 12%;
+}
+
+.fundo-forte{
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.fundo-medio{
+    background-color: var(--cor-secundaria);
+}
+
+.fundo-claro{
+    width: 80%;
+    background-color: var(--cor-fundo);
+    padding: 0 2%;
+    margin: 4% auto;
+}
+
+.leftside,.rightside{
+    margin: 0 5%;
+}
+
+.quebra-linha{
+    display: block;
+    height: 1px;
+}
+
+@media only screen and (max-width:900px){
+    .quebra-linha{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width:1050px){
+    .flex-columnreverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .rightside img{
+        width: 90%;
+        margin: 4%;
+    }
+
+    .width{
+        width: 90%;
+    }
+    
+    .leftside,.rightside{
+        margin: 0;
+    }
+
+    .flex-center-center-column-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+article{
+    background-color: var(--cor-fundo);
+    box-shadow: 4px 4px 8px rgba(42, 42, 42, 0.25);
+    border-radius: 4px;
+    margin: 1% 4%;
+}
+
+article p{
+    text-align: justify;
+    padding: 2% 15% 20% 15%;
+}
+
+#articleFundo01,#articleFundo02,#articleFundo03,#articleFundo04,#articleFundo05,#articleFundo06{
+    height: 25vh;
+    border-radius: 4px 4px 0 0;
+}
+
+#articleFundo01{
+    background-color: #FF6363;
+}
+
+#articleFundo02{
+    background-color: #63ECFF;
+}
+
+#articleFundo03{
+    background-color: #F363FF;
+}
+
+#articleFundo04{
+    background-color: #63FF73;
+}
+
+#articleFundo05{
+    background-color: #FFDD63;
+}
+
+#articleFundo06{
+    background-color: #6663FF;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="padding flex-spacebetween-center fundo-medio flex-columnreverse">
+            <div class="leftside">
+                <h1>
+                    Lorem ipsum dolor<span class="quebra-linha"></span>sit amet
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
+                <button class="fundo-forte">Botão</button>
+            </div>
+            <div class="rightside">
+                <img src="../assets/media/d03-onepage/imagem.svg" alt="Ilustração de capa">
+            </div>
+        </section>
+        <section class="fundo-claro flex-spacebetween-center fundo-medio flex-center-center-column-wrap width">
+            <article>
+                <div id="articleFundo01"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo02"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo03"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+        </section>
+        <section class="fundo-claro flex-spacebetween-center fundo-medio flex-center-center-column-wrap width">
+            <article>
+                <div id="articleFundo04"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo05"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+            <article>
+                <div id="articleFundo06"></div>
+                <h3>Título do card</h3>
+                <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pis&shy;cing elit. Ves&shy;ti&shy;bu&shy;lum in neque et nisl.</p>
+            </article>
+        </section>
+        <section class="padding fundo-medio">
+            <form class="flex-center-center-column" action="">
+                <h2>Entre em contato</h2>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="tel" name="tel" id="tel" placeholder="Telefone">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="8" placeholder="Mensagem..."></textarea>
+                <input class="fundo-forte" type="submit" value="Enviar mensagem">
+            </form>
+        </section>
+        <a target="_blank" href="https://raysantori.com/">
+            <footer>
+                <div id="copyright"></div>
+            </footer>
+        </a>
+    </main>
+
+    <script src="../assets/script/index.js"></script>
+</body>
+</html>

@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
-html,body{
+html{
+    scroll-behavior: smooth;
+}
+
+body{
     background-color: var(--cor-fundo);
     color: var(--cor-destaque);
     font-family: var(--fonte-conteudo);
     font-size: 16px;
-    scroll-behavior: smooth;
 }
 
 ::selection{
@@ -63,6 +66,12 @@ html,body{
 .flex-spacebetween{
     display: flex;
     justify-content: space-between;
+}
+
+.flex-spacebetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*footer**********/
