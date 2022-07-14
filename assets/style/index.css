@@ -74,6 +74,19 @@ body{
     align-items: center;
 }
 
+.flex-spacebetween-column{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-spacebetween-center-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
 /*footer**********/
 footer{
     color: var(--cor-conteudo);
