@@ -73,8 +73,9 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
    - [x] Design responsivo.
 
 6. <code>🎮 Desafio 07</code>  Valorant (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d07-valorant.html">ver demo</a>)<br>
-   - [ ] Incluir favicon;
-   - [ ] Design responsivo.
+   - [x] Incluir favicon;
+   - [ ] Design responsivo;
+   - [ ] Menu de compartilhamento.
 
 <div align="right"><a target="_blank" href="https://github.com/raysantori/desafio-codelandia#desafio-codel%C3%A2ndia">🔝 Voltar ao topo</a></div>
 

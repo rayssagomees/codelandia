@@ -56,6 +56,18 @@ body{
     flex-direction: column;
 }
 
+.flex-spacearound-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-spaceevenly-center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .flex-spaceevenly-center-column{
     display: flex;
     justify-content: space-evenly;

@@ -6,13 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../assets/style/index.css">
-    <link rel="shortcut icon" href="../assets/media/" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/media/d07-valorant/logo-valorant.svg" type="image/x-icon">
 
     <title>Valorant</title>
 
-    <style></style>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --cor-primaria:#FF4656;
+    --cor-secundaria:#1F2326;
+    --cor-conteudo:#FFFFFF;
+
+    --fonte-conteudo:'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+    background-image: url('../assets/media/d07-valorant/background.svg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--cor-conteudo);
+}
+
+h1,h2{
+    font-weight: 700;
+}
+
+h1{
+    font: 2.5rem/2.75rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+header,#social{
+    margin: 0 6%;
+}
+
+@media only screen and (max-width:1150px){
+    header,#social{
+        margin: 0 6%;
+    }
+}
+
+header{
+    padding: 1rem;
+}
+
+header img:nth-child(1){
+    width: 2.5rem;
+}
+
+header img{
+    width: 1.5rem;
+}
+
+header img, main ul{
+    cursor: pointer;
+}
+
+main ul{
+    list-style: none;
+}
+
+@media only screen and (max-width:1150px){
+    #social{
+        margin: 0;
+    }
+}
+
+main li{
+    display: inline;
+    padding: .5rem;
+}
+
+main li img{
+    padding: .25rem;
+}
+
+main li img:hover{
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px var(--cor-secundaria);
+    transform: translateY(-6px);
+    transition: all .4s;
+}
+
+.height{
+    height: 100vh;
+}
+
+#character,#social{
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width:1150px){
+    #social{
+        right: 45%;
+    }
+}
+
+#character{
+    right: 0;
+}
+
+@media only screen and (max-width:1150px){
+    h1,h2,#character{
+        display: none;
+    }
+}
+
+#character img{
+    height: 90vh;
+}
+
+#social{
+    padding: 1rem;
+}
+    </style>
 </head>
 <body>
+    <main class="height">
+        <header class="flex-spacebetween-center">
+            <a href="#"><img src="../assets/media/d07-valorant/logo-valorant.svg" alt="Logo Valorant"></a>
+            <h2>Riot Games</h2>
+            <img src="../assets/media/d07-valorant/icon-share.svg" alt="Ícone de compartilhamento">
+        </header>
+        <div>
+            <div>
+                <h1>Valorant</h1>
+                <div class="character">
+                    <img src="../assets/media/d07-valorant/oc-omen.svg" alt="Omen">
+                    <img src="../assets/media/d07-valorant/oc-sage.svg" alt="Sage">
+                    <img src="../assets/media/d07-valorant/oc-sova.svg" alt="Sova">
+                </div>
+            </div>
+        </div>
+        <nav class="flex-spacebetween-center">
+            <ul id="social">
+                <li><a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/media/d07-valorant/social-facebook.svg" alt="Logo Facebook">
+                </a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/media/d07-valorant/social-instagram.svg" alt="Logo Instagram">
+                </a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/media/d07-valorant/social-twitter.svg" alt="Logo Twitter">
+                </a></li>
+            </ul>
+            <ul></ul>
+        </nav>
+        <div id="character">
+            <img src="../assets/media/d07-valorant/full-character.svg" alt="Personagem">
+        </div>
+    </main>
     <a target="_blank" href="https://raysantori.com/">
         <footer>
             <div id="copyright"></div>
