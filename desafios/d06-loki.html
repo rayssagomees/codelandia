@@ -5,10 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="arquivos/css/estilo.css">
-    <link rel="shortcut icon" href="arquivos/midia/estrela.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="shortcut icon" href="../assets/media/d06-loki/estrela.svg" type="image/x-icon">
 
     <title>Loki</title>
+
+    <style>
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*id visual*/
+:root{
+    --cor-primaria:#FFA800;
+    --cor-secundaria:#0072D2;
+    --cor-conteudo:#FFFFFF;
+    --cor-conteudo-destaque:#131318;
+
+    --fonte-conteudo: 'B612', sans-serif;
+}
+
+body{
+    background-image: url('../assets/media/d06-loki/fundo.svg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-conteudo);
+}
+
+/*títulos*/
+h1,h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 117px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+/*marca-texto*/
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+a{
+    color: var(--branco);
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*inputs*/
+input{
+    background-color: var(--cor-conteudo-destaque);
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-conteudo);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1.25rem 2rem;
+    border: none;
+    margin: 1rem 1rem 1rem 0;
+    box-shadow: 5px 5px 8px rgba(19, 19, 24, 0.5);
+}
+
+input:hover{
+    background-color: rgb(50, 141, 216);
+    transition: all 1s;
+}
+
+.btn-primaria{
+    background-color: var(--cor-secundaria);
+}
+
+main{
+    height: 100vh;
+    padding: 8% 16%;
+    box-shadow: 5px 5px 8px rgba(19, 19, 24, 0.5);
+}
+
+@media only screen and (max-width:720px){
+    main{
+        height: auto;
+        padding: 8% 4%;
+        box-shadow: 5px 5px 8px rgba(19, 19, 24, 0.5);
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.lateralEsquerda{
+    margin: 4%;
+}
+
+.lateralDireita{
+    margin: 5% 0;
+}
+
+.loki-dados{
+    display: flex;
+    align-items: center;
+    padding: 4% 0;
+}
+
+.loki-dados i{
+    font-size:1.5rem;
+}
+
+.estrelas{
+    font-size: 2.5rem;
+    padding: 0 8%;
+}
+
+.fi-ss-star{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+}
+
+.fiSec{
+    color: var(--cor-conteudo);
+}
+    </style>
 </head>
 <body>
     <main>
@@ -19,7 +175,7 @@
 
         <div class="flex">
             <div class="lateralEsquerda">
-                <img src="arquivos/midia/capa.svg" alt="Capa do filme Loki da Marvel">
+                <img src="../assets/media/d06-loki/capa.svg" alt="Capa do filme Loki da Marvel">
             </div>
             
             <div class="lateralDireita">
@@ -46,14 +202,11 @@
     </main>
 
     <a target="_blank" href="https://raysantori.com/">
-        <footer id="copy">
-            <script>
-                var copy = window.document.querySelector('#copy')
-                var agora = new Date()
-                var ano = agora.getFullYear()
-                copy.innerHTML = `&copy; ${ano} raysantori`
-            </script>
+        <footer>
+            <div id="copyright"></div>
         </footer>
     </a>
+
+    <script src="../assets/script/index.js"></script>
 </body>
 </html>
