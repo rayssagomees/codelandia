@@ -1,0 +1,92 @@
+/*referência*/
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*id visual*/
+:root{
+    --corPrimaria:#FFA800;
+    --corSecundaria:#0072D2;
+    --branco:#FFFFFF;
+    --preto:#131318;
+
+    --fonteTexto: 'B612', sans-serif;
+}
+
+body{
+    background-image: url('../midia/fundo.svg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: var(--branco);
+    font-family: var(--fonteTexto);
+}
+
+/*títulos*/
+h1,h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 117px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+/*marca-texto*/
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+a{
+    color: var(--branco);
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*inputs*/
+input{
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: var(--fonteTexto);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    border-radius: var(--borderRadius);
+    padding: 1.25rem 2rem;
+    border: none;
+    margin: 1rem 1rem 1rem 0;
+    box-shadow: 5px 5px 8px rgba(19, 19, 24, 0.5);
+}
+
+input:hover{
+    background-color: rgb(50, 141, 216);
+    transition: all 1s;
+}
+
+.btn-primaria{
+    background-color: var(--corSecundaria);
+}

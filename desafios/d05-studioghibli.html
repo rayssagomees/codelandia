@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="shortcut icon" href="../assets/media/d05-studioghibli/logo.svg" type="image/x-icon">
+
+    <title>Studio Ghibli</title>
+
+    <style>
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*id visual*/
+:root{
+    --cor-primaria:#628E75;
+    --cor-secundaria:#1A4855;
+    --cor-conteudo:#F9F9F9;
+
+    --fonte-conteudo: 'Poppins', sans-serif;
+}
+
+/*títulos*/
+h1,h2{
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 14vh;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+/*marca-texto*/
+a{
+    color: var(--cor-conteudo);
+    font-weight: 600;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+p{
+    font-size: 1vh;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+/*botões*/
+@media only screen and (max-width:900px){
+    h1{
+        font-size: 50px;
+    }
+
+    button{
+        width: 100%;
+        margin: 8%;
+    }
+}
+
+button{
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-conteudo);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1.25rem 3rem;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 4px;
+    margin: 2% 2% 2% 0;
+}
+
+button:hover{
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 5px 5px 10px rgba(26, 72, 85, 0.25);
+    transition: all 1s;
+}
+
+button i{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.btnPrimario{
+    background: var(--cor-primaria);
+}
+
+.btnSecundario{
+    background: transparent;
+}
+
+@media only screen and (max-width:1050px){
+    header{
+        background-color: var(--cor-primaria);
+    }
+
+    main{
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-area: 
+        "lDir"
+        "lEsq";
+    }
+
+    .lateralEsquerda{
+        display: none;
+        grid-area: lEsq;
+    }
+}
+
+header{
+    position: fixed;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 2rem 8%;
+}
+
+header ul{
+    list-style: none;
+    opacity: 0.75;
+}
+
+header ul li{
+    display: inline;
+    padding: 1rem;
+}
+
+main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "lDir lEsq";
+    background-image: linear-gradient(120deg, var(--cor-primaria),var(--cor-secundaria));
+    padding: 0 8%;
+}
+
+main > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lateralDireita{
+    grid-area: lDir;
+}
+
+.lateralEsquerda{
+    grid-area: lEsq;
+}
+
+main h3{
+    display: flex;
+    justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../assets/media/d05-studioghibli/logo.svg" alt="Logo Studio Ghibli">
+        <ul>
+            <li><a target="_blank" title="Facebook" href="#"><img src="../assets/media/d05-studioghibli/facebook.svg" alt="Logo Facebook"></a></li>
+            <li><a target="_blank" title="Instagram" href="#"><img src="../assets/media/d05-studioghibli/instagram.svg" alt="Logo Instagram"></a></li>
+            <li><a target="_blank" title="Twitter" href="#"><img src="../assets/media/d05-studioghibli/twitter.svg" alt="Logo Twitter"></a></li>
+            <li><a target="_blank" title="Youtube" href="#"><img src="../assets/media/d05-studioghibli/youtube.svg" alt="Logo Youtube"></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="lateralDireita">
+            <h2>Hayao Miyazaki</h2>
+            <h1>A viagem de Chihiro</h1>
+            Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.
+            <div class="flex">
+                <button class="btnPrimario"><i class="fi fi-rr-play"></i> Assistir agora</button>
+                <button class="btnSecundario">Assista o trailer</button>
+            </div>
+        </div>
+        <div class="lateralEsquerda">
+            <img src="../assets/media/d05-studioghibli/fantasminha.svg" alt="A viagem de Chihiro">
+        </div>
+    </main>
+    <a target="_blank" href="https://raysantori.com/">
+        <footer>
+            <div id="copyright"></div>
+        </footer>
+    </a>
+
+    <script src="../assets/script/index.js"></script>
+</body>
+</html>
