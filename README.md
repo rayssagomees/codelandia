@@ -32,7 +32,7 @@
 
 Funcionalidades que ainda precisam ser implementadas no desafio.
 
-1. <code>💻 Desafio 01</code>  Blog (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio01-blog/index.html">ver demo</a>)<br>
+1. <code>💻 Desafio 01</code>  Blog (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d01-blog.html">ver demo</a>)<br>
    - [x] Incluir favicon;
    - [x] Design responsivo;
    - [x] Tema claro ou escuro;
@@ -40,7 +40,7 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
    - [ ] Exibir em grade ou linha;
    - [ ] Botão ler mais.
 
-2. <code>👟 Desafio 02</code>  JordanShoes (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio02-jordanshoes/index.html">ver demo</a>)<br>
+2. <code>👟 Desafio 02</code>  JordanShoes (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d02-jordanshoes.html">ver demo</a>)<br>
    - [x] Incluir favicon;
    - [x] Design responsivo;
    - [ ] Cabeçalho com: lançamentos, masculino, feminino, infantil, salvos, carrinho, perfil;
@@ -51,26 +51,30 @@ Funcionalidades que ainda precisam ser implementadas no desafio.
    - [ ] Botão adicionar ao carrinho;
    - [ ] Captura de leads.
 
-3. <code>📰 Desafio 03</code> OnePage (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio03-onepage/index.html">ver demo</a>)<br>
+3. <code>📰 Desafio 03</code> OnePage (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d03-onepage.html">ver demo</a>)<br>
    - [x] Incluir favicon;
    - [x] Design responsivo;
    - [ ] Card:hover destacado;
    - [ ] Validação de formulário.
 
-4. <code>📲 Desafio 04</code>  Login (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio04-login/index.html">ver demo</a>)<br>
+4. <code>📲 Desafio 04</code>  Login (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d04-login.html">ver demo</a>)<br>
    - [x] Incluir favicon;
    - [x] Design responsivo;
    - [ ] Validação de formulário.
 
-5. <code>🎬 Desafio 05</code>  Studio Ghibli (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio05-studioghibli/index.html">ver demo</a>)<br>
+5. <code>🎬 Desafio 05</code>  Studio Ghibli (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d05-studioghibli.html">ver demo</a>)<br>
    - [x] Incluir favicon;
    - [ ] Animação de imagem;
    - [ ] Botão losango;
    - [ ] Design responsivo.
 
-6. <code>⭐ Desafio 06</code>  Loki (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafio-codelandia/desafio06-loki/index.html">ver demo</a>)<br>
+6. <code>⭐ Desafio 06</code>  Loki (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d06-loki.html">ver demo</a>)<br>
    - [x] Incluir favicon;
    - [x] Design responsivo.
+
+6. <code>⭐ Desafio 07</code>  Valorant (<a target="_blank" href="https://raysantori.github.io/desafio-codelandia/desafios/d07-valorant.html">ver demo</a>)<br>
+   - [ ] Incluir favicon;
+   - [ ] Design responsivo.
 
 <div align="right"><a target="_blank" href="https://github.com/raysantori/desafio-codelandia#desafio-codel%C3%A2ndia">🔝 Voltar ao topo</a></div>
 
