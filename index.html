@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/style/index.css">
     <link rel="shortcut icon" href="assets/media/d22-codelandia/favicon.svg" type="image/x-icon">
 
-    <title>Desafio Codelândia</title><!--desafio 22 codelândia-->
+    <title translate="no">raysantori - codelândia</title><!--desafio 22 codelândia-->
 
     <style>
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
@@ -35,10 +35,74 @@ body{
     color: var(--cor-conteudo);
     font-family: var(--fonte-conteudo);
 }
+
+.flex-spacebetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.width{
+    width: 60vw;
+}
+
+.margin{
+    margin: auto;
+}
     </style>
 </head>
-<body>
-    
-    <script src="assets/script/index.js"></script>
+<body class="width margin">
+    <header class="flex-spacebetween-center">
+        <div>
+            <img src="assets/media/d22-codelandia/logo.svg" alt="Logo desafio Codelândia">
+        </div>
+        <div>
+            <a href="https://discord.gg/wNCWTVuxyz" target="_blank" rel="noopener noreferrer"><input type="button" value="Entrar na comunidade"></a>
+            <a class="btn-primary" href="https://github.com/raysantori" target="_blank" rel="noopener noreferrer"><input type="button" value="Meu GitHub"></a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Comunidade dev</h2>
+            <h1>Projetos da comundidade Codelândia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+        </div>
+        <section id="projetos">
+            <article class="projeto">
+                <div>
+                    <img src="" alt="Amostra projeto">
+                </div>
+                <div>
+                    <h3>Nome do projeto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                </div>
+                <div>
+                    <input type="button" value="Demo">
+                    <input type="button" value="GitHub">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="flex-spacebetween-center">
+        <div>
+            <img src="assets/media/d22-codelandia/favicon.svg" alt="Logo simples Codelândia: {)">
+        </div>
+        <div class="flex-row">
+            <div id="copyright"></div>
+            <div>Codelândia</div>
+        </div>
+    </footer>
+
+    <script>
+//copyright
+let copyright = document.querySelector('#copyright')
+let anoAtual = new Date().getFullYear()
+copyright.innerHTML = `&copy; ${anoAtual} RaySantori`
+    </script>
 </body>
 </html>
