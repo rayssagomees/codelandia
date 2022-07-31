@@ -36,6 +36,25 @@ body{
     font-family: var(--fonte-conteudo);
 }
 
+input{
+    background-color: transparent;
+    color: var(--cor-conteudo-destaque);
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+header input.btn-primary{
+    border: 1px solid var(--cor-primaria);
+}
+
+header input:hover{
+    text-decoration: 2px underline;
+    transition: all 1s;
+}
+
 .flex-spacebetween-center{
     display: flex;
     justify-content: space-between;
@@ -54,6 +73,18 @@ body{
 .margin{
     margin: auto;
 }
+
+header{
+    padding: 2rem 0;
+}
+
+header img{
+    height: 32px;
+}
+
+header input{
+    cursor: pointer;
+}
     </style>
 </head>
 <body class="width margin">
@@ -62,8 +93,8 @@ body{
             <img src="assets/media/d22-codelandia/logo.svg" alt="Logo desafio Codelândia">
         </div>
         <div>
-            <a href="https://discord.gg/wNCWTVuxyz" target="_blank" rel="noopener noreferrer"><input type="button" value="Entrar na comunidade"></a>
-            <a class="btn-primary" href="https://github.com/raysantori" target="_blank" rel="noopener noreferrer"><input type="button" value="Meu GitHub"></a>
+            <a href="https://discord.gg/wNCWTVuxyz" target="_blank" rel="noopener noreferrer"><input type="button" value="Comunidade"></a>
+            <a href="https://github.com/raysantori" target="_blank" rel="noopener noreferrer"><input class="btn-primary" type="button" value="Meu GitHub"></a>
         </div>
     </header>
     <main>
@@ -92,9 +123,8 @@ body{
         <div>
             <img src="assets/media/d22-codelandia/favicon.svg" alt="Logo simples Codelândia: {)">
         </div>
-        <div class="flex-row">
+        <div>
             <div id="copyright"></div>
-            <div>Codelândia</div>
         </div>
     </footer>
 
@@ -102,7 +132,7 @@ body{
 //copyright
 let copyright = document.querySelector('#copyright')
 let anoAtual = new Date().getFullYear()
-copyright.innerHTML = `&copy; ${anoAtual} RaySantori`
+copyright.innerHTML = `&copy; ${anoAtual} RaySantori - Codelândia`
     </script>
 </body>
 </html>
