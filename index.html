@@ -63,6 +63,7 @@ h3{
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 31px;
+    padding: 1rem 0;
 }
 
 input{
@@ -73,15 +74,32 @@ input{
     padding: 0.75rem 1.5rem;
     border: 1px solid transparent;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 header input.btn-primary{
     border: 1px solid var(--cor-primaria);
 }
 
-header input:hover{
+input:hover{
     text-decoration: 2px underline;
     transition: all 1s;
+}
+
+section input{
+    background-color: transparent;
+    color: var(--cor-conteudo-destaque);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75rem 3rem;
+    border: 1px solid var(--cor-secundaria);
+    margin: 1.5rem 0.5rem 0 0;
+}
+
+section input.btn-primary{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
 }
 
 .flex-spacebetween-center{
@@ -103,6 +121,10 @@ header input:hover{
     margin: auto;
 }
 
+.padding{
+    padding: 1% 0;
+}
+
 header{
     padding: 2rem 0;
 }
@@ -111,16 +133,36 @@ header img{
     height: 32px;
 }
 
-header input{
-    cursor: pointer;
-}
-
 main > div{
     width: 80%;
 }
 
 #projetos{
     padding: 6% 0;
+}
+
+article{
+    width: 49%; height: auto;
+    background-color: var(--cor-sobreposta);
+    padding: 1.25rem;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+}
+
+article img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+article iframe{
+    width: 100%; height: 250px;
+    border-radius: 4px;
+}
+
+article p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 170%;
 }
 
 footer img{
@@ -145,19 +187,118 @@ footer img{
             <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>-->
         </div>
         <section id="projetos">
-            <article class="projeto">
-                <div>
-                    <img src="" alt="Amostra projeto">
-                </div>
-                <div>
-                    <h3>Nome do projeto 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
-                </div>
-                <div>
-                    <input type="button" value="Demo">
-                    <input type="button" value="GitHub">
-                </div>
-            </article>
+            <div class="flex-row flex-spacebetween-center padding">
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+            </div>
+            <div class="flex-row flex-spacebetween-center padding">
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+            </div>
+            <div class="flex-row flex-spacebetween-center padding">
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+            </div>
+            <div class="flex-row flex-spacebetween-center padding">
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+                <article class="projeto">
+                    <div>
+                        <img src="assets/media/d22-codelandia/demo-projeto.svg" alt="Amostra projeto">
+                    </div>
+                    <div>
+                        <h3>Nome do projeto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis ligula, accumsan nec cursus in, eleifend sit amet dui.</p>
+                    </div>
+                    <div>
+                        <input class="btn-primary" type="button" value="Demo">
+                        <input type="button" value="GitHub">
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer class="flex-spacebetween-center">
