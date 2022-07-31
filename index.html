@@ -166,7 +166,7 @@ h1{
 }
 
 .width{
-    width: 50vw;
+    width: 75vw;
 }
 
 header.flex-row,footer.flex-row{
@@ -180,7 +180,12 @@ header.flex-row,footer.flex-row{
 }
 
 article{
+    width: 100%; height: auto;
     margin: 2% 0;
+}
+
+article iframe{
+    width: 100%; height: 75vh;
 }
 
 .padding{
@@ -191,12 +196,18 @@ main > div{
     width: 100%;
 }
 
-article{
-    width: 100%; height: auto;
-}
-
 #projetos{
     padding: 6% 0;
+}
+}
+
+@media only screen and (max-width:900px){
+.width{
+    width: 75vw;
+}
+
+article iframe{
+    width: 100%; height: 50vh;
 }
 }
 
@@ -204,12 +215,20 @@ article{
 .width{
     width: 90vw;
 }
+
+article iframe{
+    width: 100%; height: 40vh;
+}
 }
 
 @media only screen and (max-width:550px){
 header.flex-row, .flex-row{
     display: flex;
     flex-direction: column;
+}
+
+article iframe{
+    width: 100%; height: 25vh;
 }
 
 footer.flex-row{
