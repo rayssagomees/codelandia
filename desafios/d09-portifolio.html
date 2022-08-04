@@ -15,7 +15,6 @@
 
 :root{
     --cor-primaria:#00DF5E;
-    --cor-secundaria:#1F2326;
     --cor-conteudo-destaque:#F9F9F9;
     --cor-conteudo:#828282;
     --cor-fundo:#171717;
@@ -34,19 +33,33 @@ body{
 
 input{
     background: var(--cor-fundo);
-    color: #F9F9F9;
+    color: var(--cor-conteudo-destaque);
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.1rem;
     padding: 1rem 2rem;
     border: 1px solid var(--cor-sobreposta-destaque);
     margin: 1rem 1rem 0 0;
+    cursor: pointer;
+}
+
+input:hover{
+    background: var(--cor-conteudo);
+    color: var(--cor-conteudo-destaque);
+    border: 1px solid var(--cor-conteudo);
+    box-shadow: 6px 6px 8px var(--cor-sobreposta);
+    transition: all 1s;
 }
 
 .input-primary{
     background-color: var(--cor-primaria);
     color: var(--cor-fundo);
     border: 1px solid var(--cor-primaria);
+}
+
+a:hover{
+    color: var(--cor-primaria);
+    transition: all .3s;
 }
 
 h1,h2,h3{
@@ -157,6 +170,14 @@ header li{
     width: 500px;
 }
 
+#skills img{
+    width: 125px; height: 125px;
+    background-color: var(--cor-sobreposta);
+    padding: 2rem;
+    border: 1px solid var(--cor-sobreposta-destaque);
+    margin: 2rem;
+}
+
 footer{
     background-color: var(--cor-sobreposta);
     color: var(--cor-conteudo-destaque);
@@ -172,13 +193,13 @@ footer{
                     <a href="#about-me">
                         <li>Sobre mim</li>
                     </a>
-                    <a href="projects">
+                    <a href="#projects">
                         <li>Projetos</li>
                     </a>
-                    <a href="services">
+                    <a href="#services">
                         <li>Serviços</li>
                     </a>
-                    <a href="skills">
+                    <a href="#skills">
                         <li>Habilidades</li>
                     </a>
                 </ul>
@@ -190,7 +211,7 @@ footer{
                 <h2>raysantori</h2>
                 <p>Desenvolvedora front-end da web</p>
                 <a href="#"><input class="input-primary" type="button" value="Baixar currículo"></a>
-                <a href="#"><input type="button" value="Entrar em contato"></a>
+                <a href="mailto:contato@raysantori.com"><input type="button" value="Entrar em contato"></a>
             </div>
             <div>
                 <img src="../assets/media/d09-portifolio/undraw-about.svg" alt="Imagem">
@@ -267,7 +288,7 @@ footer{
         </section>
         <section id="skills">
             <h2>Habilidades</h2>
-            <div>
+            <div class="flex-center-center">
                 <div>
                     <img src="../assets/media/d09-portifolio/logo-html5.svg" alt="Logo HTML">
                 </div>
