@@ -85,6 +85,12 @@ h3,p{
     line-height: 1.4rem;
 }
 
+h4{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
 .width{
     max-width: 1024px;
 }
@@ -117,7 +123,7 @@ h3,p{
 }
 
 header{
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 header h1,header a{
@@ -133,6 +139,10 @@ header ul{
 header li{
     display: inline;
     padding-left: 2rem;
+}
+
+section{
+    padding: 6% 0 0 0;
 }
 
 #top-bar{
@@ -168,6 +178,24 @@ header li{
 
 .card-contact-container{
     width: 500px;
+}
+
+.card-services{
+    width: 250px; height: 200px;
+    background-color: var(--cor-sobreposta);
+    border: 1px solid var(--cor-sobreposta-destaque);
+    border-bottom: 4px solid var(--cor-primaria);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.card-services img{
+    width: 50px; height: 50px;
+}
+
+.card-services h4{
+    width: 50%;
+    padding: 2rem 0;
 }
 
 #skills img{
@@ -261,28 +289,31 @@ footer{
             </div>
         </section>
         <section id="services">
-            <div>
-                <div>
-                    <img src="../assets/media/d09-portifolio/code.svg" alt="Ícone code">
+            <h2>Serviços</h2>
+            <div class="flex-row flex-center-center">
+                <div class="card-services">
+                    <div>
+                        <img src="../assets/media/d09-portifolio/code.svg" alt="Ícone code">
+                    </div>
+                    <div>
+                        <h4>Criação de sites</h4>
+                    </div>
                 </div>
-                <div>
-                    <h4>Criação de sites</h4>
+                <div class="card-services">
+                    <div>
+                        <img src="../assets/media/d09-portifolio/figma.svg" alt="Logo figma">
+                    </div>
+                    <div>
+                        <h4>UI Designer</h4>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../assets/media/d09-portifolio/figma.svg" alt="Logo figma">
-                </div>
-                <div>
-                    <h4>UI Designer</h4>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../assets/media/d09-portifolio/smartphone.svg" alt="Ícone smartphone">
-                </div>
-                <div>
-                    <h4>Sites responsivos</h4>
+                <div class="card-services">
+                    <div>
+                        <img src="../assets/media/d09-portifolio/smartphone.svg" alt="Ícone smartphone">
+                    </div>
+                    <div>
+                        <h4>Sites responsivos</h4>
+                    </div>
                 </div>
             </div>
         </section>
