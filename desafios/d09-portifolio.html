@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="shortcut icon" href="../assets/media/d09-portifolio/undraw-about.svg" type="image/x-icon">
+
+    <title>Portifólio</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root{
+    --cor-primaria:#00DF5E;
+    --cor-secundaria:#1F2326;
+    --cor-conteudo-destaque:#F9F9F9;
+    --cor-conteudo:#828282;
+    --cor-fundo:#171717;
+    --cor-sobreposta-destaque:#333333;
+    --cor-sobreposta:#212121;
+
+    --fonte-conteudo:'DM Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-conteudo);
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+}
+
+h1,h2,h3{
+    color: var(--cor-conteudo-destaque);
+}
+
+h1{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.width{
+    width: 1024px;
+}
+
+.margin{
+    margin: auto;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: var(--cor-sobreposta);
+    color: var(--cor-conteudo-destaque);
+}
+
+header{
+    padding: 1rem 0;
+}
+
+header h1,header a{
+    color: var(--cor-conteudo-destaque);
+}
+
+header ul{
+    list-style: none;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+header li{
+    display: inline;
+    padding-left: 2rem;
+}
+    </style>
+</head>
+<body>
+    <main class="width margin">
+        <header class="flex-row flex-center-center">
+            <h1>Portifólio</h1>
+            <nav>
+                <ul>
+                    <a href="#about-me">
+                        <li>Sobre mim</li>
+                    </a>
+                    <a href="projects">
+                        <li>Projetos</li>
+                    </a>
+                    <a href="services">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="skills">
+                        <li>Habilidades</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <section id="top-bar">
+            <div>
+                <h2>Oi, me chama de ray</h2>
+                <p>Desenvolvedora front-end da web</p>
+                <a href="#"><input type="button" value="Download"></a>
+                <a href="#"><input type="button" value="Entrar em contato"></a>
+            </div>
+            <div>
+                <img src="../assets/media/d09-portifolio/undraw-about.svg" alt="Imagem">
+            </div>
+        </section>
+        <section id="about-me">
+            <h2>Sobre mim</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+            </p>
+            <div>
+                <div>
+                    <div>
+                        <img src="../assets/media/d09-portifolio/smile.svg" alt="Ícones de contato: smile">
+                    </div>
+                    <div>
+                        <h3>Nome</h3>
+                        <p>Rayssa Gomes</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../assets/media/d09-portifolio/mail.svg" alt="Ícones de contato: mail">
+                    </div>
+                    <div>
+                        <h3>E-mail</h3>
+                        <p>contato@raysantori.com</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../assets/media/d09-portifolio/instagram.svg" alt="Ícones de contato: instagram">
+                    </div>
+                    <div>
+                        <h3>Instagram</h3>
+                        <p>@raysantori</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../assets/media/d09-portifolio/phone.svg" alt="Ícones de contato: phone">
+                    </div>
+                    <div>
+                        <h3>Celular</h3>
+                        <p>(66) 9 9969-1956</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/" alt="Imagem projeto">
+                </div>
+                <div>
+                    <h3>Título do projeto</h3>
+                    <p>Tecnologias: HTML, CSS e JS.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/code.svg" alt="Ícone code">
+                </div>
+                <div>
+                    <h4>Criação de sites</h4>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/figma.svg" alt="Logo figma">
+                </div>
+                <div>
+                    <h4>UI Designer</h4>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/smartphone.svg" alt="Ícone smartphone">
+                </div>
+                <div>
+                    <h4>Sites responsivos</h4>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/logo-html5.svg" alt="Logo HTML">
+                </div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/logo-css3.svg" alt="Logo CSS">
+                </div>
+                <div>
+                    <img src="../assets/media/d09-portifolio/logo-js.svg" alt="Logo JavaScript">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="copyright"></div>
+    </footer>
+
+    <script>
+let copyright = document.querySelector('#copyright')
+let anoAtual = new Date().getFullYear()
+copyright.innerHTML = `&copy; ${anoAtual} raysantori`
+    </script>
+</body>
+</html>
