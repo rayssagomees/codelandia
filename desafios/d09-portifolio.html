@@ -13,6 +13,9 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
 :root{
     --cor-primaria:#00DF5E;
     --cor-secundaria:#1F2326;
@@ -32,6 +35,23 @@ body{
     font-size: 16px;
 }
 
+input{
+    background: var(--cor-fundo);
+    color: #F9F9F9;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--cor-sobreposta-destaque);
+    margin: 1rem 1rem 0 0;
+}
+
+.input-primary{
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    border: 1px solid var(--cor-primaria);
+}
+
 h1,h2,h3{
     color: var(--cor-conteudo-destaque);
 }
@@ -42,8 +62,21 @@ h1{
     line-height: 2rem;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.6;
+    text-align: center;
+}
+
+h3,p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
 .width{
-    width: 1024px;
+    max-width: 1024px;
 }
 
 .margin{
@@ -57,13 +90,20 @@ h1{
 
 .flex-center-center{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-footer{
-    background-color: var(--cor-sobreposta);
-    color: var(--cor-conteudo-destaque);
+.flex-spaceevenly-center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-spacebetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header{
@@ -84,11 +124,51 @@ header li{
     display: inline;
     padding-left: 2rem;
 }
+
+#top-bar{
+    margin: 6% 0;
+}
+
+#top-bar h2{
+    text-align: left;
+}
+
+#about-me > p{
+    width: 50%;
+    text-align: center;
+}
+
+#about-me a{
+    color: var(--cor-conteudo);
+}
+
+.card-contact{
+    width: 75%;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.card-contact i{
+    width: 50px; height: 50px;
+    background-color: var(--cor-sobreposta);
+    font-size: 3rem;
+    padding: .75rem;
+    border-radius: 50%;
+}
+
+.card-contact-container{
+    width: 500px;
+}
+
+footer{
+    background-color: var(--cor-sobreposta);
+    color: var(--cor-conteudo-destaque);
+}
     </style>
 </head>
 <body>
-    <main class="width margin">
-        <header class="flex-row flex-center-center">
+    <main class="margin width">
+        <header class="flex-row flex-spacebetween-center">
             <h1>Portifólio</h1>
             <nav>
                 <ul>
@@ -107,11 +187,12 @@ header li{
                 </ul>
             </nav>
         </header>
-        <section id="top-bar">
+        <section class="flex-spacebetween-center" id="top-bar">
             <div>
-                <h2>Oi, me chama de ray</h2>
+                <h1>Oi, me chama de</h1>
+                <h2>raysantori</h2>
                 <p>Desenvolvedora front-end da web</p>
-                <a href="#"><input type="button" value="Download"></a>
+                <a href="#"><input class="input-primary" type="button" value="Baixar currículo"></a>
                 <a href="#"><input type="button" value="Entrar em contato"></a>
             </div>
             <div>
@@ -120,44 +201,32 @@ header li{
         </section>
         <section id="about-me">
             <h2>Sobre mim</h2>
-            <p>
+            <p class="margin">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
             </p>
-            <div>
-                <div>
-                    <div>
-                        <img src="../assets/media/d09-portifolio/smile.svg" alt="Ícones de contato: smile">
-                    </div>
-                    <div>
-                        <h3>Nome</h3>
-                        <p>Rayssa Gomes</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="../assets/media/d09-portifolio/mail.svg" alt="Ícones de contato: mail">
-                    </div>
+            <div class="margin card-contact flex-row">
+                <div class="card-contact-container">
                     <div>
                         <h3>E-mail</h3>
-                        <p>contato@raysantori.com</p>
+                        <p><a href="mailto:contato@raysantori.com" target="_blank" rel="noopener noreferrer">contato@raysantori.com</a></p>
                     </div>
                 </div>
-                <div>
+                <div class="card-contact-container">
                     <div>
-                        <img src="../assets/media/d09-portifolio/instagram.svg" alt="Ícones de contato: instagram">
-                    </div>
-                    <div>
-                        <h3>Instagram</h3>
-                        <p>@raysantori</p>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/raysantori" target="_blank" rel="noopener noreferrer">@raysantori</a></p>
                     </div>
                 </div>
-                <div>
+                <div class="card-contact-container">
                     <div>
-                        <img src="../assets/media/d09-portifolio/phone.svg" alt="Ícones de contato: phone">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/raysantori/" target="_blank" rel="noopener noreferrer">/raysantori</a></p>
                     </div>
+                </div>
+                <div class="card-contact-container">
                     <div>
-                        <h3>Celular</h3>
-                        <p>(66) 9 9969-1956</p>
+                        <h3>YouTube</h3>
+                        <p><a href="https://www.youtube.com/channel/UCzuJH2zxfhTcL0ahkkXnZUA" target="_blank" rel="noopener noreferrer">raysantori</a></p>
                     </div>
                 </div>
             </div>
