@@ -168,14 +168,6 @@ section{
     padding: 4% 0;
 }
 
-.card-contact i{
-    width: 50px; height: 50px;
-    background-color: var(--cor-sobreposta);
-    font-size: 3rem;
-    padding: .75rem;
-    border-radius: 50%;
-}
-
 .card-contact-container{
     width: 500px;
 }
@@ -225,6 +217,64 @@ section{
 footer{
     background-color: var(--cor-sobreposta);
     color: var(--cor-conteudo-destaque);
+}
+
+@media only screen and (max-width:660px){
+    header{
+        visibility: hidden;
+    }
+    
+    #top-bar img{
+        display: none;
+    }
+
+    #top-bar.flex-spacebetween-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    #about-me > p{
+    width: 90%;
+    text-align: center;
+    }
+
+    .card-contact-container{
+        width: 100%;
+        columns: 2;
+    }
+
+    .card-contact-container h3{
+        text-align: right;
+    }
+
+    .card-contact-container p{
+        text-align: left;
+    }
+
+    #about-me .flex-row,#services .flex-row{
+        flex-direction: column;
+    }
+
+    #projects > div{
+        width: 90%;
+    }
+
+    #projects iframe{
+        height: 200px;
+    }
+
+    .card-services{
+        width: 90%; height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-services h4{
+        width: 100%;
+        padding: 2rem;
+    }
 }
     </style>
 </head>
@@ -338,7 +388,7 @@ footer{
         </section>
         <section id="skills">
             <h2>Habilidades</h2>
-            <div class="flex-center-center">
+            <div class="flex-center-center flex-row">
                 <div>
                     <img src="../assets/media/d09-portifolio/logo-html5.svg" alt="Logo HTML">
                 </div>
