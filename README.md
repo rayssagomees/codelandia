@@ -16,7 +16,7 @@
 
 <br>
 
-## 
+## 🧩 Desafios realizados
 
 [x] Desafio 01: Blog
 [x] Desafio 02: JordanShoes
@@ -26,6 +26,7 @@
 [x] Desafio 06: Loki
 [ ] Desafio 07: Valorant
 [x] Desafio 09: Portifólio
+[x] Desafio 22: Codelândia
 [ ] Desafio 29: Anime
 
 <br>
