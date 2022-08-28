@@ -61,12 +61,14 @@ h2{
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.2rem;
+    padding: .5rem 0;
 }
 
 h3{
     font-weight: 500;
     font-size: 2.3rem;
     line-height: 4rem;
+    text-transform: uppercase;
 }
 
 h4{}
@@ -76,7 +78,7 @@ p{
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.75rem;
-    color: var(--cor-conteudo-destaque);
+    color: var(--cor-conteudo);
 }
 
 a{
@@ -126,6 +128,12 @@ img{
 .flex-center-row{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.flex-center-center{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -179,6 +187,34 @@ header li{
 
 section{
     padding-top: 4rem;
+}
+
+.banner-top{
+    padding: 2rem 0;
+}
+
+.shadow-banner{
+    position: absolute; 
+    bottom:1.2%; left:12.3%; 
+    width:75.5%;
+}
+
+.banner-text{
+    position: absolute; 
+    bottom:5%; left:15%;
+}
+
+.banner-text p{
+    width: 40%;
+}
+
+#atualizados p, #atualizados h4{
+    text-align: center;
+}
+
+#atualizados img, #recentes img{
+    width: 150px !important; height: 215px !important;
+    padding: 1rem;
 }
 
 footer{
@@ -239,10 +275,15 @@ footer{
         <section id="novidades">
             <h2>Últimas novidades</h2>
             <p>O que você vai assistir hoje?</p>
-            <div>
-                <img src="../assets/media/d29-anime/one-punch-man.png" alt="">
-                <h3>One Punch Man terá 3ª temporada</h3>
-                <p>Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime…</p>
+            <div class="banner-top">
+                <div>
+                    <img src="../assets/media/d29-anime/one-punch-man.png" alt="">
+                    <img  class="shadow-banner" src="../assets/media/d29-anime/overlay.png" alt="">
+                </div>
+                <div class="banner-text">
+                    <h3>One Punch Man terá 3ª temporada</h3>
+                    <p>Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime…</p>
+                </div>
             </div>
         </section>
         <section id="atualizados">
@@ -335,7 +376,6 @@ footer{
                     <h4>Orient 2</h4>
                 </div>
             </div>
-            <input type="button" value="Ver mais">
         </section>
         <section id="recentes">
             <h2>Animes recentes</h2>
