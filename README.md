@@ -16,6 +16,20 @@
 
 <br>
 
+## 
+
+[x] Desafio 01: Blog
+[x] Desafio 02: JordanShoes
+[x] Desafio 03: OnePage
+[x] Desafio 04: Login
+[ ] Desafio 05: Studio Ghibli
+[x] Desafio 06: Loki
+[ ] Desafio 07: Valorant
+[x] Desafio 09: Portifólio
+[ ] Desafio 29: Anime
+
+<br>
+
 ## 💾 Instalação
 
 Clone o Desafio Codelândia no terminal:
