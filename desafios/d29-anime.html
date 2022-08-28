@@ -34,35 +34,12 @@ body{
     font-size: 16px;
 }
 
-input{
-    background: var(--cor-sobreposta);
-    padding: 0 8px;
-    border: none;
+::-webkit-scrollbar{
+    width: 6px; height: 6px;
 }
 
-.input-search{
-    background: var(--cor-sobreposta);
-    padding: 8px 8px 8px 24px;
-    border: none;
-    border-radius: 37px;
-}
-
-input[type=search]{
-    margin: 0 1rem;
-}
-
-input,::placeholder{
-    font-family: var(--fonte-conteudo);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 2rem;
-    letter-spacing: 0.07em;
-    color: var(--cor-conteudo-destaque);
-}
-
-input:focus{
-    background: var(--cor-sobreposta);
-    outline: 1px solid var(--cor-primaria);
+::-webkit-scrollbar-track{
+    background-color: var(--cor-sobreposta);
 }
 
 h1,h2,h3,h4{
@@ -84,7 +61,6 @@ h2{
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.2rem;
-    text-align: center;
 }
 
 h3{
@@ -100,8 +76,51 @@ p{
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.75rem;
-    text-align: center;
     color: var(--cor-conteudo-destaque);
+}
+
+a{
+    color: var(--cor-conteudo-destaque);
+}
+
+a:hover{
+    color: var(--cor-primaria);
+}
+
+input{
+    background: var(--cor-sobreposta);
+    padding: 0 8px;
+    border: none;
+}
+
+.input-search{
+    background: var(--cor-sobreposta);
+    padding: 8px 8px 8px 24px;
+    border: none;
+    border-radius: 37px;
+    margin-left: 5rem;
+}
+
+input[type=search]{
+    margin: 0 1rem;
+}
+
+input,::placeholder{
+    font-family: var(--fonte-conteudo);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.07em;
+    color: var(--cor-conteudo-destaque);
+}
+
+input:focus{
+    background: var(--cor-sobreposta);
+    outline: 1px solid var(--cor-primaria);
+}
+
+img{
+    width: 100%;
 }
 
 .flex-center-row{
@@ -137,8 +156,29 @@ header li{
 }
 
 #header li{
-    color: var(--cor-conteudo-destaque);
     padding: 1rem;
+}
+
+#a-z ul{
+    overflow-x: scroll; overflow-y: hidden;
+    white-space:nowrap;
+    padding: 2rem .5rem;
+}
+
+#a-z li{
+    color: var(--cor-conteudo);
+    padding: .75rem 3rem;
+    border: 1.75px solid var(--cor-sobreposta);
+    border-radius: 37px;
+}
+
+.li-primary{
+    background-color: var(--cor-sobreposta);
+    color: var(--cor-conteudo-destaque);
+}
+
+section{
+    padding-top: 4rem;
 }
 
 footer{
@@ -153,46 +193,46 @@ footer{
                 <h1>Ani.me</h1>
                 <div class="flex-center-row" id="header">
                     <ul>
-                        <a href="http://"><li>Início</li></a>
-                        <a href="http://"><li>Lista</li></a>
-                        <a href="http://"><li>Gêneros</li></a>
-                        <a href="http://"><li>Nos episódios</li></a>
+                        <a href="#"><li>Início</li></a>
+                        <a href="#"><li>Lista</li></a>
+                        <a href="#"><li>Gêneros</li></a>
+                        <a href="#"><li>Nos episódios</li></a>
                     </ul>
                     <div class="input-search flex-center-row">
                         <i class="fi fi-rr-search"></i>
-                        <input class="flex-center-row" type="search" name="search" id="isearch" placeholder="O que você está procurando?">
+                        <input class="flex-center-row" type="search" name="search" id="isearch" placeholder="Pesquisa">
                     </div>
                 </div>
             </div>
             <div class="bottom" id="a-z">
                 <ul>
-                    <a href=""><li>Todos</li></a>
-                    <a href=""><li>A</li></a>
-                    <a href=""><li>B</li></a>
-                    <a href=""><li>C</li></a>
-                    <a href=""><li>D</li></a>
-                    <a href=""><li>E</li></a>
-                    <a href=""><li>F</li></a>
-                    <a href=""><li>G</li></a>
-                    <a href=""><li>H</li></a>
-                    <a href=""><li>I</li></a>
-                    <a href=""><li>J</li></a>
-                    <a href=""><li>K</li></a>
-                    <a href=""><li>L</li></a>
-                    <a href=""><li>M</li></a>
-                    <a href=""><li>N</li></a>
-                    <a href=""><li>O</li></a>
-                    <a href=""><li>P</li></a>
-                    <a href=""><li>Q</li></a>
-                    <a href=""><li>R</li></a>
-                    <a href=""><li>S</li></a>
-                    <a href=""><li>T</li></a>
-                    <a href=""><li>U</li></a>
-                    <a href=""><li>V</li></a>
-                    <a href=""><li>W</li></a>
-                    <a href=""><li>X</li></a>
-                    <a href=""><li>Y</li></a>
-                    <a href=""><li>Z</li></a>
+                    <a href="#"><li class="li-primary">Todos</li></a>
+                    <a href="#"><li>A</li></a>
+                    <a href="#"><li>B</li></a>
+                    <a href="#"><li>C</li></a>
+                    <a href="#"><li>D</li></a>
+                    <a href="#"><li>E</li></a>
+                    <a href="#"><li>F</li></a>
+                    <a href="#"><li>G</li></a>
+                    <a href="#"><li>H</li></a>
+                    <a href="#"><li>I</li></a>
+                    <a href="#"><li>J</li></a>
+                    <a href="#"><li>K</li></a>
+                    <a href="#"><li>L</li></a>
+                    <a href="#"><li>M</li></a>
+                    <a href="#"><li>N</li></a>
+                    <a href="#"><li>O</li></a>
+                    <a href="#"><li>P</li></a>
+                    <a href="#"><li>Q</li></a>
+                    <a href="#"><li>R</li></a>
+                    <a href="#"><li>S</li></a>
+                    <a href="#"><li>T</li></a>
+                    <a href="#"><li>U</li></a>
+                    <a href="#"><li>V</li></a>
+                    <a href="#"><li>W</li></a>
+                    <a href="#"><li>X</li></a>
+                    <a href="#"><li>Y</li></a>
+                    <a href="#"><li>Z</li></a>
                 </ul>
             </div>
         </header>
@@ -200,95 +240,96 @@ footer{
             <h2>Últimas novidades</h2>
             <p>O que você vai assistir hoje?</p>
             <div>
+                <img src="../assets/media/d29-anime/one-punch-man.png" alt="">
                 <h3>One Punch Man terá 3ª temporada</h3>
                 <p>Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime…</p>
             </div>
         </section>
         <section id="atualizados">
             <h2>Últimas atualizações</h2>
-            <div>
+            <div class="flex-center-row">
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/nanatsu-no-taizai.png" alt="">
                         <p>Episódio 24</p>
                     </div>
                     <h4>Nanatsu no Taizai</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/darling-in-the-franxx.png" alt="">
                         <p>Episódio 1</p>
                     </div>
                     <h4>Darling in the Franxx</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/douluo-dalu.png" alt="">
                         <p>Episódio 214</p>
                     </div>
                     <h4>Douluo Dalu</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/overlord4.png" alt="">
                         <p>Episódio 5</p>
                     </div>
                     <h4>Overlord 4</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/one-piece.png" alt="">
                         <p>Episódio 1029</p>
                     </div>
                     <h4>One Piece</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/fuuto-tantei.png" alt="">
                         <p>Episódio 2</p>
                     </div>
                     <h4>Fuuto Tantei</h4>
                 </div>
             </div>
-            <div>
+            <div class="flex-center-row">
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/hoshi-no-samidare.png" alt="">
                         <p>Episódio 6</p>
                     </div>
                     <h4>Hoshi no Samidare</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/bucchigire.png" alt="">
                         <p>Episódio 6</p>
                     </div>
                     <h4>Bucchigire!</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/aoashi.png" alt="">
                         <p>Episódio 16</p>
                     </div>
                     <h4>Aoashi</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/shadows-house2.png" alt="">
                         <p>Episódio 2</p>
                     </div>
                     <h4>Shadows House 2</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/summer-time-renderings.png" alt="">
                         <p>Episódio 19</p>
                     </div>
                     <h4>Summer Time Rendering</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/orient2.png" alt="">
                         <p>Episódio 2</p>
                     </div>
                     <h4>Orient 2</h4>
@@ -298,40 +339,40 @@ footer{
         </section>
         <section id="recentes">
             <h2>Animes recentes</h2>
-            <div>
+            <div class="flex-center-row">
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/mengqishishen.png" alt="">
                     </div>
                     <h4>Meng Qi Shi Shen</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/made-in-abyss.png" alt="">
                     </div>
                     <h4>Made in Abyss</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/prima-doll.png" alt="">
                     </div>
                     <h4>Prima Doll</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/isekai-ojisan.png" alt="">
                     </div>
                     <h4>Isekai Ojisan</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/yusha-yamemasu.png" alt="">
                     </div>
                     <h4>Yuusha, Yamemasu</h4>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="../assets/media/d29-anime/kami-kuzu-idol.png" alt="">
                     </div>
                     <h4>Kami Kuzu Idol</h4>
                 </div>
