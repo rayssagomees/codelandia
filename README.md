@@ -58,6 +58,6 @@ A realização desse projeto só foi possível graças aos desafios apresentados
 
 <br>
 
-<strong>Mostre apoio! ⭐ Se gostou do desafio.
+<strong>Mostre apoio!</strong> ⭐ Se gostou do desafio.
 
 ###### Copyright © 2023 raysantori.com. Todos os direitos reservados.
