@@ -56,7 +56,7 @@ A realização desse projeto só foi possível graças aos desafios apresentados
 
 > Em breve.
 
-<br><div align="right"><a target="_blank" href="https://github.com/raysantori/codelandia#desafio-codel%C3%A2ndia">🔝 Voltar ao topo</a></div>
+<div align="right"><a target="_blank" href="https://github.com/raysantori/codelandia#desafio-codel%C3%A2ndia">🔝 Voltar ao topo</a></div>
 
 <strong>Mostre apoio!</strong> ⭐ Se gostou do desafio.
 
