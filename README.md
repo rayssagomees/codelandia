@@ -43,7 +43,7 @@ Clone o desafio codelândia no terminal:
 
 ## 🤝 Criadores
 
-A realização desse projeto só foi possível graças aos desafios apresentados pela incrível comunidade Codelândia no <a target="_blank" href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia">Figma</a>.<br><br>
+A realização desse projeto só foi possível graças aos desafios apresentados pela comunidade Codelândia no <a target="_blank" href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia">Figma</a>.<br><br>
 
 | Autora | Designer |
 | :----: | :----: | 
