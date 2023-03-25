@@ -4,7 +4,7 @@
   ### DESAFIO CODELÂNDIA
   
   <p>
-    Me desafiei a desenvolver os projetos incríveis da comunidade Codelândia, com objetivo <br> de desenvolver minhas habilidades como desenvolvedora <strong>front-end</strong> da web. 
+    Superando desafios reais de programação para aprimorar <br> minhas habilidades e dominar novas técnicas com excelência. 
   </p>
   
    <!--##### Explore os documentos</a></p>
@@ -18,30 +18,32 @@
 
 ## 🧩 Desafios realizados
 
-[x] Desafio 01: Blog
-[x] Desafio 02: JordanShoes
-[x] Desafio 03: OnePage
-[x] Desafio 04: Login
-[ ] Desafio 05: Studio Ghibli
-[x] Desafio 06: Loki
-[ ] Desafio 07: Valorant
-[x] Desafio 09: Portifólio
-[x] Desafio 22: Codelândia
-[ ] Desafio 29: Anime
+| Desafios | Nome |
+| :-----: | :----: |
+| Desafio 01 | Blog |
+| Desafio 02 | JordanShoes |
+| Desafio 03 | OnePage |
+| Desafio 04 | Login |
+| Desafio 05 | Studio Ghibli |
+| Desafio 06 | Loki |
+| Desafio 07 | Valorant |
+| Desafio 09 | Portifólio |
+| Desafio 22 | Codelândia |
+| Desafio 29 | Anime |
 
 <br>
 
 ## 💾 Instalação
 
-Clone o Desafio Codelândia no terminal:
+Clone o desafio codelândia no terminal:
 
   ```
-  git clone https://github.com/raysantori/desafio-codelandia.git
+  git clone https://github.com/raysantori/codelandia.git
   ```
 
 ## 🤝 Criadores
 
-Realizar esse projeto só foi possível por causa dos desafios apresentados pela comunidade <strong>Codelândia</strong> no <a target="_blank" href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia">Figma</a>.<br><br>
+A realização desse projeto só foi possível graças aos desafios apresentados pela incrível comunidade Codelândia no <a target="_blank" href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia">Figma</a>.<br><br>
 
 | Autora | Designer |
 | :----: | :----: | 
@@ -56,6 +58,6 @@ Realizar esse projeto só foi possível por causa dos desafios apresentados pela
 
 <br>
 
-<strong>Mostre seu apoio!</strong> Dê uma ⭐ se você gostou desse desafio.
+<strong>Mostre apoio! ⭐ Se gostou do desafio.
 
-###### © 2022 RAYSANTORI
+###### Copyright © 2023 raysantori.com. Todos os direitos reservados.
