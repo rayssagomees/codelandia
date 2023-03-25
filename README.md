@@ -16,7 +16,7 @@
 
 <br>
 
-## 🧩 Desafios concluídos
+## 🧩 Desafios 
 
 | Desafios | Descrição |
 | :----- | :---- |
