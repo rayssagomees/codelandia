@@ -16,10 +16,10 @@
 
 <br>
 
-## 🧩 Desafios realizados
+## 🧩 Desafios concluídos
 
-| Desafios | Nome |
-| :-----: | :----: |
+| Desafios | Descrição |
+| :----- | :---- |
 | Desafio 01 | Blog |
 | Desafio 02 | JordanShoes |
 | Desafio 03 | OnePage |
