@@ -1,0 +1,204 @@
+/* import **************************************************/
+@import url('./header.css');
+@import url('./footer.css');
+
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* visual ID **************************************************/
+:root{
+    --primary-color:#873eff;
+    --secundary-color:#04d361;
+    --text-color:#aeaeae;
+    --title-color:#f9f9f9;
+    --background-color:#0e091b;
+    --container-color:#171228;
+
+    --font-title: 'IBM Plex Mono', monospace;
+    --font-text: 'DM Sans', sans-serif;
+}
+
+/* pattern page **************************************************/
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+}
+
+/* title **************************************************/
+h1, h2, h3{
+    font-family: var(--font-title);
+}
+
+h1{
+    font-weight: 600;
+    font-size: 4.4rem;
+    line-height: 130%;
+}
+
+h1, h3{
+    color: var(--title-color);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    color: var(--secundary-color);
+}
+
+h3{
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    padding: 1rem 0;
+}
+
+p{
+    font-size: 2rem;
+}
+
+/* button **************************************************/
+button{
+    background-color: transparent;
+    color: var(--title-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 1.6rem;
+    border: 1px solid transparent;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+button:hover{
+    text-decoration: 2px underline;
+    transition: all 1s;
+}
+
+section button{
+    padding: .8rem 4rem;
+    border: 1px solid var(--secundary-color);
+    margin: 1.5rem 0.5rem 0 0;
+}
+
+section button.btn-primary{
+    background-color: var(--secundary-color);
+    color: var(--background-color);
+}
+
+/***************************************/
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width{
+    width: 60vw;
+}
+
+.margin{
+    margin: auto;
+}
+
+.padding{
+    padding: 1% 0;
+}
+
+main > div{
+    width: 80%;
+}
+
+#projects{
+    padding: 6% 0;
+}
+
+article{
+    width:  calc(50% - 10px); height: auto;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    margin: 5px;
+}
+
+article img{
+    width: 100%; height: 150px;
+    border-radius: 4px;
+}
+
+article p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 170%;
+}
+
+/* responsividade **************************************************/ 
+@media only screen and (max-width:1300px){
+    h1{
+        font-size: 2.75rem;
+    }
+
+    .width{
+        width: 75vw;
+    }
+
+    .flex-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        width: 100%; height: auto;
+        margin: 2% 0;
+    }
+
+    article iframe{
+        width: 100%; height: 75vh;
+    }
+
+    .padding{
+        padding: 0;
+    }
+
+    main > div{
+        width: 100%;
+    }
+
+    #projects{
+        padding: 6% 0;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .width{
+        width: 75vw;
+    }
+
+    article iframe{
+        width: 100%; height: 50vh;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .width{
+        width: 90vw;
+    }
+
+    article iframe{
+        width: 100%; height: 40vh;
+    }
+}
+
+@media only screen and (max-width:550px){
+    article iframe{
+        width: 100%; height: 25vh;
+    }
+}

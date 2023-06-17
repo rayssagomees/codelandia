@@ -1,25 +1,27 @@
+/* reset **************************************************/
 *{
-    padding: 0; margin: 0;
+    padding: 0; 
+    margin: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
+/* pattern page **************************************************/
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body{
-    background-color: var(--cor-fundo);
-    color: var(--cor-destaque);
-    font-family: var(--fonte-conteudo);
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
+/* selection text **************************************************/
 ::selection{
-    background-color: var(--cor-primaria);
-    color: var(--cor-conteudo);
+    background-color: var(--primary-color);
 }
 
+/* scrollbar **************************************************/ 
 ::-webkit-scrollbar{
     width: 8px; height: 8px;
 }
@@ -33,10 +35,15 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--cor-primaria);
+    background-color: var(--primary-color);
 }
 
-/*style**********/
+/* display **************************************************/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
 .flex-center-center{
     display: flex;
     justify-content: center;
@@ -97,16 +104,4 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-}
-
-/*footer**********/
-footer{
-    color: var(--cor-conteudo);
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-#copyright{
-    text-align: center;
-    text-transform: uppercase;
 }

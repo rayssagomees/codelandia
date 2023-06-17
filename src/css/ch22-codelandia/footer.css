@@ -1,0 +1,21 @@
+footer {
+    text-transform: uppercase;
+    padding: 2.4rem 0;
+}
+
+footer img{
+    height: 2.5rem;
+}
+ 
+/*
+@media only screen and (max-width:550px){
+    footer.flex-row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer > div{
+        margin: 2%;
+    }
+}
+*/

@@ -16,7 +16,7 @@
 
 <br>
 
-## 🧩 Desafios 
+<!-- ## 🧩 Desafios 
 
 | Desafios | Descrição |
 | :----- | :---- |
@@ -31,7 +31,7 @@
 | Desafio 22 | Codelândia |
 | Desafio 29 | Anime |
 
-<br>
+<br> 
 
 ## 💾 Instalação
 
@@ -40,7 +40,7 @@ Clone o desafio codelândia no terminal:
   ```
   git clone https://github.com/raysantori/codelandia.git
   ```
-
+-->
 ## 🤝 Criadores
 
 A realização desse projeto só foi possível graças aos desafios apresentados pela comunidade Codelândia no <a target="_blank" href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia">Figma</a>.<br><br>
@@ -52,12 +52,12 @@ A realização desse projeto só foi possível graças aos desafios apresentados
 
 <br>
 
-## 📃 Licença
+<!-- ## 📃 Licença
 
 > Em breve.
 
-<div align="right"><a target="_blank" href="https://github.com/raysantori/codelandia#desafio-codel%C3%A2ndia">🔝 Voltar ao topo</a></div>
+<div align="right"><a target="_blank" href="https://github.com/raysantori/codelandia#desafio-codel%C3%A2ndia">🔝 Voltar ao topo</a></div> -->
 
 <strong>Mostre apoio!</strong> ⭐ Se gostou do desafio.
 
-###### Copyright © 2023 raysantori.com. Todos os direitos reservados.
+<!-- ###### Copyright © 2023 raysantori.com. Todos os direitos reservados. -->

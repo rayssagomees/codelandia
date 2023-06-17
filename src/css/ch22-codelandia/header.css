@@ -1,0 +1,28 @@
+header{
+    padding: 2.4rem 0;
+}
+
+header img{
+    height: 4rem;
+}
+
+header .btn-primary{
+    padding: .8rem 1.6rem;
+    border: 1px solid var(--primary-color);
+    border-radius: .4rem;
+    margin: 0 4rem;
+}
+
+@media only screen and (max-width:1300px){
+    header.flex-row,footer.flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+}
+    
+@media only screen and (max-width:550px){
+    header.flex-row, .flex-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
