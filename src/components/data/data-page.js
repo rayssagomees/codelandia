@@ -3,7 +3,7 @@ const titlePage = `raysantori`;
 const subtitlePage = ` // Codelândia`;
 
 // logo page
-const logoPage = 'src/images/d22-codelandia/logo.svg';
+const logoPage = 'src/images/ch022-codelandia/logo.svg';
 const altLogoPage = 'Logo Codelândia'
 
 // social links
@@ -18,15 +18,15 @@ const projectLiveCta = 'Live';
 const projectRepositoryCta = 'Code';
 const projectRepositoryLinks = 'https://github.com/raysantori/desafio-codelandia';
 var projectImages = [
-    'dfd1', 
-    'dfd2', 
-    'dfd3', 
-    'dfd4', 
-    'dfd5', 
-    'dfd6', 
-    'dfd7', 
-    'dfd8', 
-    'dfd9'
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg', 
+    'ch022-codelandia/live-project.svg'
 ];
 var projectTitles = [
     'Desafio 01: Blog', 
@@ -52,5 +52,5 @@ var projectLiveLinks = [
 ];
 
 // content footer
-const iconLogoPage = 'src/images/d22-codelandia/logo_33.svg';
+const iconLogoPage = 'src/images/ch022-codelandia/logo_33.svg';
 const licenseFooter = ` // Codelândia`;

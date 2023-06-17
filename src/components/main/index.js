@@ -26,7 +26,7 @@ var main = document.createElement('main');
         // image project
         var divImage = document.createElement('div');
         var img = document.createElement('img');
-        img.src = '../../images/' + projectImages[i];
+        img.src = 'src/images/' + projectImages[i];
         img.alt = `${descriptionImageProject}`;
 
         divImage.appendChild(img);
