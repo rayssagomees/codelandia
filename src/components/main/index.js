@@ -17,7 +17,7 @@ var main = document.createElement('main');
     containerMain.appendChild(descriptionMain);
 
     var sectionProjects = document.createElement('section');
-    sectionProjects.id = 'procjects';
+    sectionProjects.id = 'projects';
     
     for (var i = 0; i < projectTitles.length; i++) {
         var article = document.createElement('article');

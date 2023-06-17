@@ -37,7 +37,9 @@ h1, h2, h3{
 
 h1{
     font-weight: 600;
-    font-size: 4.4rem;
+    font-size: 6.4rem;
+    line-height: 4rem;
+    letter-spacing: .25rem;
     line-height: 130%;
 }
 
@@ -62,14 +64,14 @@ h3{
 }
 
 p{
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 
 /* button **************************************************/
 button{
     background-color: transparent;
     color: var(--title-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0 1.6rem;
@@ -117,7 +119,7 @@ main > div{
 }
 
 #projects{
-    padding: 6% 0;
+    padding: 4rem 0;
 }
 
 article{

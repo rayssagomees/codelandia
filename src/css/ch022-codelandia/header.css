@@ -1,5 +1,5 @@
 header{
-    padding: 2.4rem 0;
+    padding: 2.4rem 0 1rem 0;
 }
 
 header img{
@@ -7,10 +7,10 @@ header img{
 }
 
 header .btn-primary{
-    padding: .8rem 1.6rem;
+    padding: 1.2rem;
     border: 1px solid var(--primary-color);
     border-radius: .4rem;
-    margin: 0 4rem;
+    margin: 0 1rem;
 }
 
 @media only screen and (max-width:1300px){
