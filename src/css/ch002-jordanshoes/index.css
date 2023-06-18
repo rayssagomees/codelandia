@@ -1,0 +1,125 @@
+/* import **************************************************/
+@import url('footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* visual ID **************************************************/
+:root{
+    --primary-color: #00aeff;
+    --dark-color: #181818;
+    --gray-dark-color:#474747;
+    --gray-color:#EBE9EA;
+    --white-color:#f9f9f9;
+
+    --text-font: 'Montserrat', sans-serif;
+}
+
+/* pattern **************************************************/
+body{
+    width: 100vw;
+    background-color: var(--white-color);
+    font-family: var(--text-font);
+    color: var(--title-color);
+    overflow-x: hidden;
+}
+
+/* title **************************************************/
+h1{
+    color: var(--dark-color);
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 2.4rem 0;
+}
+
+h2{
+    font-size: 4.8rem;
+    color: var(--white-color);
+    padding: 4rem 0;
+}
+
+h3{
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 1.6rem 0;
+}
+
+p{
+    font-size: 2.4rem;
+}
+
+main > div p{
+    width: 35vw;
+    color: var(--white-color);
+}
+
+/*  **************************************************/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+}
+
+section img:hover{
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.discount {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1.6rem;
+}
+
+.hightlight{
+    height: 400px;
+    background-image: url('../../images/ch002-jordanshoes/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background{
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(0,0,0,.5) 35%, rgba(255,255,255,.25) 100%);
+}
+
+.product{
+    width: calc(25% - 1.6rem);
+    background-color: var(--gray-color);
+    padding: 4rem;
+    margin: .8rem;
+}
+
+/* responsive layout **************************************************/
+@media screen and (max-width: 1200px) {
+    .product {
+        width: calc(33.33% - 1.6rem);
+    }
+
+    main > div p{
+        width: 50vw;
+        color: var(--white-color);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 1.6rem);
+    }
+
+    main > div p{
+        width: 75vw;
+        color: var(--white-color);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product {
+        width: 100%;
+    }
+
+    main > div p{
+        width: 90vw;
+        color: var(--white-color);
+    }
+}

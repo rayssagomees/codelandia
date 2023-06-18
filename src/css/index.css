@@ -27,7 +27,7 @@ body{
 }
 
 ::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
-    border-radius: 4px;
+    border-radius: .4rem;
 }
 
 ::-webkit-scrollbar-track{
@@ -53,6 +53,12 @@ body{
 .flex-center-column{
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.flex-column-center{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
