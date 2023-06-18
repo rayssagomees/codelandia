@@ -5,208 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../assets/style/index.css">
-    <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53a3bb8d-f7c4-4244-a197-b80e64e85ef0/d12ui56-b168c660-c2f6-4863-8628-3a0e59b02ecd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUzYTNiYjhkLWY3YzQtNDI0NC1hMTk3LWI4MGU2NGU4NWVmMFwvZDEydWk1Ni1iMTY4YzY2MC1jMmY2LTQ4NjMtODYyOC0zYTBlNTliMDJlY2QuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5Cy4VPZIf3I1-pCQhl1ixOSuvRuziqNb4e0ITPprxR4" type="image/x-icon">
+    <!-- style -->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/ch001-blog/index.css">
 
+    <!-- Challenge 001 - Blog -->
     <title>Blog</title>
 
-    <style>
-/*ícones*/
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
-
-/*tipografia*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/*id visual*/
-:root{
-    --cor-primaria:#574ae8;
-    --cor-secundaria:#3ea1db;
-    --cor-sobreposta:#fff;
-    --cor-fundo:#f9f9f9;
-    --cor-conteudo-destaque:#1a202c;
-    --cor-destaque:#f9f9f9;
-    --cor-conteudo:#717171;
-
-    --fonte-destaque: 'Lexend Deca', sans-serif;
-    --fonte-conteudo: 'Inter', sans-serif;
-}
-
-.dark-mode:root{
-    --cor-primaria:#1b1b1b;
-    --cor-secundaria:#1f1d1d;
-    --cor-sobreposta:#2c2c2c;
-    --cor-fundo:#1f1f1f;
-    --cor-conteudo-destaque:#cecdcd;
-    --cor-destaque:#7c7b7b;
-    --cor-conteudo:#cecdcd;
-}
-
-/*títulos*/
-h1{
-    color: var(--cor-destaque);
-    font-family: var(--fonte-destaque);
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 0.5rem 0;
-}
-
-h2{
-    color: var(--cor-conteudo-destaque);
-    font-family: var(--fonte-destaque);
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-/*marca-texto*/
-a{
-    color: var(--cor-destaque);
-}
-
-a:hover{
-    font-weight: bold;
-}
-
-p{
-    color: var(--cor-conteudo);
-    font-family: var(--fonte-destaque);
-    font-size: 1.25rem;
-    font-weight: 400;
-    padding: 0.5rem 0;
-}
-
-/*inputs*/
-input{
-    width: 100%;
-    background-color: transparent;
-    color: var(--cor-fundo);
-    font-family: var(--fonte-conteudo);
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding: 1.25rem;
-    border: none;
-    outline: none;
-}
-
-input[type=checkbox]{
-    visibility: hidden;
-}
-
-::placeholder{
-    color: rgba(255, 255, 255, 0.5);
-    font-family: var(--fonte-conteudo);
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-header{
-    padding: 2rem;
-}
-
-header i{
-    color: var(--cor-destaque);
-}
-
-.width,article{
-    width: 53vw;
-}
-
-.gradient{
-    background-image: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
-}
-
-.margin{
-    margin: 2%;
-}
-
-.border-radius{
-    border-radius: 4px;
-}
-
-.post-data{
-    color: var(--cor-conteudo);
-    font-family: var(--fonte-destaque);
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-article{
-    background-color: var(--cor-sobreposta);
-    padding: 3rem;
-    margin: 1%;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
-}
-
-.quadro-icone{
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-}
-
-.quadro-icone .fi{
-    font-size: 1rem;
-    padding: 0 0 0 1.25rem;
-}
-
-@media only screen and (max-width:770px){
-    .width{
-        width: 95vw !important;
-    }
-
-    .margin{
-        margin: 2%;
-    }
-
-    .flex-spacebetween{
-        justify-content: space-between;
-    }
-}
-    </style>
+    <!-- scripts -->
+    <script src="../src/components/data/data-page.js"></script>
+    <script>
+        var subtitlePage = ` // Blog`;
+    </script>
+    <script src="../src/components/data/title.js"></script>
 </head>
 <body>
-    <header class="flex-center-column gradient">
-        <div class="flex-spacebetween width">
-            <h1>Blog</h1>
 
-            <label for="switch" id="iconeTema">
-                <input type="checkbox" name="switch" id="switch"><i class="fi fi-rr-eclipse"></i></i>
-            </label>
-        </div>
-        <div class="margin">
-            <div class="quadro-icone flex-center-center width">
-                <i class="fi fi-rr-search"></i>
-                <input type="search" name="search" id="search" placeholder="O que você está procurando?" onkeyup="pesquisar">
-            </div>
-        </div>
-    </header>
-    <main class="flex-center-center-column margin">
-        <article class="width border-radius">
-            <p class="post-data">02 de jul, 2021</p>
-            <h2>Agora é oficial: o Windows 11 está vindo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
-        </article>
-
-        <article class="width border-radius">
-            <p class="post-data">02 de jul, 2021</p>
-            <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
-        </article>
-
-        <article class="width border-radius">
-            <p class="post-data">02 de jul, 2021</p>
-            <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
-        </article>
-
-        <article class="width border-radius">
-            <p class="post-data">02 de jul, 2021</p>
-            <h2>John McAfee, criador do antivírus McAfee, morre</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
-        </article>
-    </main>
-    <a target="_blank" href="https://raysantori.com/">
-        <footer id="copyright"></footer>
-    </a>
-
-    <script src="../assets/script/index.js"></script>
+    <!-- scripts -->
+    <script src="../src/components/ch001-blog/header.js"></script>
+    <script src="../src/components/ch001-blog/main.js"></script>
+    <script src="../src/components/ch001-blog/theme-switch.js"></script>
 </body>
 </html>

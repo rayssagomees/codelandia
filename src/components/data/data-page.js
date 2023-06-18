@@ -1,6 +1,6 @@
 // content page
 const titlePage = `raysantori`;
-const subtitlePage = ` // Codelândia`;
+var subtitlePage = ` // Transformando ideias em código`;
 
 // logo page
 const logoPage = 'src/images/ch022-codelandia/logo.svg';

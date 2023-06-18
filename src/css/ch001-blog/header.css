@@ -1,0 +1,7 @@
+header{
+    padding: 2rem;
+}
+
+header i{
+    color: var(--title-color);
+}
