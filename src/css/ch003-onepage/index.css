@@ -1,0 +1,209 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* style guide */
+:root {
+  /* brand color */
+  --primary-color: #6C63FF;
+  --secundary-color: #D7D4FF;
+
+  /* typography */
+  --title-font: 'Merriweather', serif;
+  --content-font: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--gray-color);
+  color: var(--dark-gray-color);
+  font-size: 1.8rem;
+}
+
+h2, h3, h4 {
+  font-family: var(--title-font);
+  color: var(--dark-color);
+  padding: 2.4rem 0;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+section:first-child p {
+  font-size: 2rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2rem;
+  padding: 1.2rem calc(1.2rem * 3);
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+  margin: 4rem 0 2rem 0;
+}
+
+textarea {
+    height: 25vh;
+}
+
+textarea::placeholder, input::placeholder {
+  font-size: 1.8rem;
+}
+
+textarea:focus::placeholder, input:focus::placeholder {
+  color: transparent;
+}
+
+textarea, input {
+    width: 25vw;
+    background-color: var(--white-color);
+    color: var(--dark-gray-color);
+    font-family: var(--content-font);
+    font-size: 2rem;
+    padding: 2rem;
+    border: none;
+    border-radius: .4rem;
+    margin: 1.2rem 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type='submit'] {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+section {
+  padding: 8rem 0;
+}
+
+.container {
+  width: 60%; 
+  margin: 0 auto;  
+}
+
+.highlight-background {
+  background-color: var(--secundary-color);
+}
+
+.width-container {
+  width: 35%; 
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-container {
+    width: calc(33.33% - 2rem); 
+    height: 45rem;
+    background-color: var(--white-color);
+    border-radius: .4rem;
+    margin: 1rem;
+}
+    
+.color-cards {
+    height: 40%;
+    background-color: var(--secundary-color);
+    border-radius: .4rem;
+}
+    
+#color-cards-0 {
+    background-color: #FF6363;
+}
+    
+#color-cards-1 {
+    background-color: #63ECFF;
+}
+    
+#color-cards-2 {
+    background-color: #F363FF;
+}
+    
+#color-cards-3 {
+    background-color: #63FF73;
+}
+    
+#color-cards-4 {
+    background-color: #FFDD63;
+}
+    
+#color-cards-5 {
+    background-color: #6663FF;
+}
+    
+.content-cards {
+    padding: 4rem;
+}
+
+@media screen and (max-width: 1300px) {
+    textarea, input {
+      width: 50vw;
+    }
+  
+    .container {
+      width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    textarea, input {
+      width: 50vw;
+    }
+    
+    .width-container{
+        width: 50%;
+    }
+  
+    .container {
+      width: 90%;
+    }
+
+    .cards-container {
+      width: calc(33.33% - 2rem);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    textarea, input {
+      width: 75vw;
+    }
+
+    .cards-container {
+      width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #image-introduce{
+        display: none;
+    }
+    
+    .width-container{
+        width: 90%;
+    }
+
+    textarea, input {
+      width: 90vw;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  
+    .cards-container {
+      width: calc(100% - 2rem);
+    }
+}
