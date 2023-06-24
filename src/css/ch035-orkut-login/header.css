@@ -1,0 +1,30 @@
+header {
+    padding: 2rem 0;
+}
+
+header ul{
+    list-style: none;
+}
+
+header li{
+    display: inline;
+    padding-left: 4rem;
+    cursor: pointer;
+}
+
+header li:hover{
+    text-decoration: 2px underline;
+    transition: all .3s;
+}
+
+@media screen and (max-width: 568px) {
+    #right-container{
+        display: none;
+    }
+
+    .flex-space-between-center-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

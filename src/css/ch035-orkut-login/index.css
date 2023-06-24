@@ -1,0 +1,163 @@
+/* import */
+@import url('../index.css');
+@import url('header.css');
+@import url('footer.css');
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+/* style guide */
+:root{
+    /**/
+    --primary-color: #ed2590;
+
+    /* theme color */
+    --dark-color:#4b4b4b;
+    --dark-gray-color:#b4aeae;
+    --gray-color:#D9E6F7;
+
+    /* typography */
+    --content-font: 'SF Pro Display', sans-serif;;
+}
+
+body{
+    background-color: var(--gray-color);
+    color: var(--dark-color);
+    font-family: var(--content-font);
+    font-size: 1.8rem;
+}
+
+/* title */
+h1, h2, h3, h4{
+    color: var(--primary-color);
+    padding: 2.4rem 0;
+}
+
+h2{
+    color: var(--white-color);
+    font-size: 3.2rem;
+    font-weight: 100;
+}
+
+main div:first-child h2{
+    width: 75%;
+    padding: 4rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+a{
+    color: var(--primary-color);
+}
+
+a:hover{
+    text-decoration: 2px underline;
+}
+
+a, button, input[type='submit'], input[type='checkbox']{
+    cursor: pointer;
+}
+
+button{
+    background-color: var(--gray-color);
+    color: var(--primary-color);
+}
+
+input{
+    background-color: var(--gray-color);
+    color: var(--dark-color);
+}
+
+input[type='submit']{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+button, input{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 2rem;
+    border: none;
+    border-radius: .8rem;
+    margin: 1.2rem 0;
+    outline: none;
+}
+
+main{
+    height: 100vh;
+}
+
+.container-background{
+    background-color: var(--white-color);
+}
+
+.width-container{
+    width: 75%;
+}
+
+.cta-image{
+    width: calc(66.66% - 2rem);
+    height: 500px;
+    background-image: url('../../images/ch035-orkut-login/background-friends.png');
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.background-shadow{
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 35%, rgba(0,0,0,.75) 100%);
+    border-radius: 2rem;
+}
+
+.login-container{
+    width: calc(33.33% - 2rem);
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.login-container a{
+    padding: 4rem 0 2rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .cta-image{
+        width: calc(50% - 2rem);
+    }
+
+    .login-container{
+        width: calc(50% - 2rem);
+    }
+
+    main div:first-child h2{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main div > div:first-child{
+        display: none;
+    }
+
+    .login-container{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    main div > div:first-child{
+        display: none;
+    }
+
+    .login-container{
+        width: 90%;
+        margin: auto;
+    }
+}

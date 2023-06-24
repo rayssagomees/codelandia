@@ -33,7 +33,8 @@ var projectImages = [
     //'ch022-codelandia/ch006-loki.png', 
     //'ch022-codelandia/live-project.svg', 
     //'ch022-codelandia/ch009-portfolio.png', 
-    //'ch022-codelandia/live-project.svg'
+    //'ch022-codelandia/live-project.svg',
+    'ch022-codelandia/ch035-orkut-login.png',
 ];
 var projectTitles = [
     'Blog', // Desafio 01
@@ -44,7 +45,8 @@ var projectTitles = [
     //'Loki', // Desafio 06
     //'Valorant', // Desafio 07
     //'Portifólio', // Desafio 09
-    //'Anime'// Desafio 29
+    //'Anime',// Desafio 29
+    'Orkut: Login',// Desafio 35
 ];
 var projectLiveLinks = [
     'ch001-blog', 
@@ -55,7 +57,8 @@ var projectLiveLinks = [
     //'ch006-loki', 
     //'ch007-valorant', 
     //'ch009-portfolio', 
-    //'ch029-anime'
+    //'ch029-anime',
+    'ch035-orkut-login',
 ];
 
 // content footer
