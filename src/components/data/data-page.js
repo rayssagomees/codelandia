@@ -28,7 +28,7 @@ var projectImages = [
     'ch022-codelandia/ch001-blog.png', 
     'ch022-codelandia/ch002-jordanshoes.png', 
     'ch022-codelandia/ch003-onepage.png', 
-    //'ch022-codelandia/ch004-login.png', 
+    'ch022-codelandia/ch004-login.png', 
     //'ch022-codelandia/live-project.svg', 
     //'ch022-codelandia/ch006-loki.png', 
     //'ch022-codelandia/live-project.svg', 
@@ -40,7 +40,7 @@ var projectTitles = [
     'Blog', // Desafio 01
     'JordanShoes', // Desafio 02    
     'OnePage', // Desafio 03
-    //'Login', // Desafio 04
+    'Login', // Desafio 04
     //'Studio Ghibli', // Desafio 05
     //'Loki', // Desafio 06
     //'Valorant', // Desafio 07
@@ -52,7 +52,7 @@ var projectLiveLinks = [
     'ch001-blog', 
     'ch002-jordanshoes', 
     'ch003-onepage', 
-    //'ch004-login', 
+    'ch004-login', 
     //'ch005-studioghibli', 
     //'ch006-loki', 
     //'ch007-valorant', 

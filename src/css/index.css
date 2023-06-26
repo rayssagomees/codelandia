@@ -151,3 +151,8 @@ body{
     align-items: end;
 }
 
+.flex-start-center{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
