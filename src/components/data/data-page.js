@@ -23,7 +23,7 @@ const githubLink = 'https://github.com/carolinngomes';
 const descriptionImageProject = 'Imagem do projeto';
 const projectLiveCta = 'Live';
 const projectRepositoryCta = 'Code';
-const projectRepositoryLinks = 'https://github.com/carolinngomes/desafio-codelandia';
+const projectRepositoryLinks = 'https://github.com/carolinngomes/codelandia';
 var projectImages = [
     'ch022-codelandia/ch001-blog.png', 
     'ch022-codelandia/ch002-jordanshoes.png', 
