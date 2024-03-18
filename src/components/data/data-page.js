@@ -1,5 +1,5 @@
 // content page
-const titlePage = `Carolina Gomes`;
+const titlePage = `Rayssa Gomes`;
 var subtitlePage = ` // Transformando ideias em código`;
 
 // favicon page
@@ -17,13 +17,13 @@ const altLogoPage = 'Logo Codelândia'
 const codelandiaDiscordLinkCta = 'Comunidade';
 const codelandiaDiscordLink = 'https://discord.gg/QevDJqCzaY';
 const githubCta = 'Meu GitHub';
-const githubLink = 'https://github.com/carolinngomes';
+const githubLink = 'https://github.com/rayssagomees';
 
 // projects section
 const descriptionImageProject = 'Imagem do projeto';
 const projectLiveCta = 'Live';
 const projectRepositoryCta = 'Code';
-const projectRepositoryLinks = 'https://github.com/carolinngomes/codelandia';
+const projectRepositoryLinks = 'https://github.com/rayssagomees/codelandia';
 var projectImages = [
     'ch022-codelandia/ch001-blog.png', 
     'ch022-codelandia/ch002-jordanshoes.png', 
