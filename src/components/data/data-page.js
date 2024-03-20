@@ -15,7 +15,7 @@ const altLogoPage = 'Logo Codelândia'
 
 // social links
 const codelandiaDiscordLinkCta = 'Comunidade';
-const codelandiaDiscordLink = 'https://discord.gg/QevDJqCzaY';
+const codelandiaDiscordLink = 'https://discord.gg/5VtQENfHTA';
 const githubCta = 'Meu GitHub';
 const githubLink = 'https://github.com/rayssagomees';
 
